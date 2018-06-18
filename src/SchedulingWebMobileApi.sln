@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulingWebMobileApi", "SchedulingWebMobileApi\SchedulingWebMobileApi.csproj", "{8143BF14-4B46-429C-9651-E03A82F53B4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulingWebMobileApi.Core", "SchedulingWebMobileApi.Core\SchedulingWebMobileApi.Core.csproj", "{74205B45-8683-425F-81C9-C9B88AEBDA61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8143BF14-4B46-429C-9651-E03A82F53B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8143BF14-4B46-429C-9651-E03A82F53B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8143BF14-4B46-429C-9651-E03A82F53B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8143BF14-4B46-429C-9651-E03A82F53B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74205B45-8683-425F-81C9-C9B88AEBDA61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74205B45-8683-425F-81C9-C9B88AEBDA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74205B45-8683-425F-81C9-C9B88AEBDA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74205B45-8683-425F-81C9-C9B88AEBDA61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A120870B-5F54-4782-A08A-89DCE94CC135}
+	EndGlobalSection
+EndGlobal
