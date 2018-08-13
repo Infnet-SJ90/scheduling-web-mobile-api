@@ -3,12 +3,12 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SchedulingWebMobileApi.Models.Models.Response.Authentication
+namespace SchedulingWebMobileApi.Models.Models.Response.Cidadao
 {
-    public class AuthenticationOkResponseModel : IResponse<AuthenticationResponseModel>
+    public class CidadaoOkResponseModel : IResponse<CidadaoResponseModel>
     {
-        public AuthenticationOkResponseModel() { }
-        public AuthenticationOkResponseModel(string messageFail)
+        public CidadaoOkResponseModel() { }
+        public CidadaoOkResponseModel(string messageFail)
         {
             Errors = new List<ErrorModelResponse>
             {
@@ -16,7 +16,7 @@ namespace SchedulingWebMobileApi.Models.Models.Response.Authentication
             };
         }
 
-        public AuthenticationResponseModel Result { get; set; }
+        public CidadaoResponseModel Result { get; set; }
         public IList<ErrorModelResponse> Errors { get; set; }
 
         public int StatusCode()

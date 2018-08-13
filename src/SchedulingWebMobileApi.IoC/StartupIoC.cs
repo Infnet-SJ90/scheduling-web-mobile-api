@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MySql.Data.MySqlClient;
+using SchedulingWebMobileApi.Application.AppServices;
 using SchedulingWebMobileApi.Application.Interfaces;
 using SchedulingWebMobileApi.Core.Interfaces;
 using SchedulingWebMobileApi.Core.Interfaces.Services;

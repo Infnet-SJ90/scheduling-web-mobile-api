@@ -41,7 +41,19 @@ namespace SchedulingWebMobileApi.Core.Repository
 
         public override bool Delete(Guid key)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _connection.Open();
+                return _connection.Execute("DELETE FROM CIDADAO WHERE CidadaoKey = @CidadaoKey", new { CidadaoKey = key }) > 0;
+            }
+            catch (Exception)
+            {
+                throw new Exception();
+            }
+            finally
+            {
+                _connection.Close();
+            }
         }
 
         public bool Exists(Cidadao cidadao)
@@ -115,7 +127,20 @@ namespace SchedulingWebMobileApi.Core.Repository
 
         public override Cidadao Update(Cidadao entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _connection.Open();
+                _connection.Execute("UPDATE CIDADAO SET Nome = @Nome, Email = @Email, Senha = @Senha where CidadaoKey = @CidadaoKey", entity);
+                return entity;
+            }
+            catch (Exception)
+            {
+                throw new Exception();
+            }
+            finally
+            {
+                _connection.Close();
+            }
         }
     }
 }

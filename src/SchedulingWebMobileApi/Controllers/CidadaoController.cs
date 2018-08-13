@@ -2,9 +2,12 @@
 using SchedulingWebMobileApi.Application.Interfaces;
 using SchedulingWebMobileApi.Core.Entities;
 using SchedulingWebMobileApi.Core.Mapper;
+using SchedulingWebMobileApi.Models.Models.Request;
 using SchedulingWebMobileApi.Models.Request;
 using SchedulingWebMobileApi.Models.Response.Common;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -23,19 +26,6 @@ namespace SchedulingWebMobileApi.Controllers
             _mapperAdapter = mapperAdapter;
         }
 
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/<controller>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
         [HttpPost("/authentication")]
         public IActionResult Authentication([FromBody]AuthenticationRequestModel authentication)
         {
@@ -48,21 +38,40 @@ namespace SchedulingWebMobileApi.Controllers
             return new ObjectResult(badRequest) { StatusCode = badRequest.StatusCode() };
         }
 
+        [HttpGet("{key}")]
+        public IActionResult Get(Guid key)
+        {
+            var response = this._cidadaoAppService.Get(key);
+            return new ObjectResult(response) { StatusCode = response.StatusCode() };
+        }
+
         [HttpPost]
-        public void Post([FromBody]string value)
+        public IActionResult Post([FromBody]CidadaoRequestModel cidadao)
         {
+            if (ModelState.IsValid)
+            {
+                var response = this._cidadaoAppService.Insert(cidadao);
+                return new ObjectResult(response) { StatusCode = response.StatusCode() };
+            }
+
+            var badRequest = new BadRequestResponse($"{ModelState.Keys.FirstOrDefault()} obrigatório");
+            return new ObjectResult(badRequest) { StatusCode = badRequest.StatusCode() };
         }
 
-        // PUT api/<controller>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [HttpPut]
+        public IActionResult Put([FromBody]CidadaoRequestModel cidadao)
         {
+            var response = this._cidadaoAppService.Update(cidadao);
+            return new ObjectResult(response) { StatusCode = response.StatusCode() };
         }
 
-        // DELETE api/<controller>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("{key}")]
+        public IActionResult Delete(Guid key)
         {
+            var response = this._cidadaoAppService.Delete(key);
+            return new ObjectResult(response) { StatusCode = response.StatusCode() };
         }
+
+
     }
 }

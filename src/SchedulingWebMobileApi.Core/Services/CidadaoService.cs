@@ -3,8 +3,6 @@ using SchedulingWebMobileApi.Core.Exceptions;
 using SchedulingWebMobileApi.Core.Interfaces;
 using SchedulingWebMobileApi.Core.Interfaces.Services;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SchedulingWebMobileApi.Core.Services
 {
@@ -31,7 +29,17 @@ namespace SchedulingWebMobileApi.Core.Services
 
         public bool Delete(Guid key)
         {
-            throw new NotImplementedException();
+            if (Get(key) == null)
+                throw new NotFoundException("Citizen not found");
+
+            try
+            {
+                return _cidadaoRepository.Delete(key);
+            }
+            catch (Exception)
+            {
+                throw new InternalServerErrorException("Not possible delete the citizen");
+            }
         }
 
         public Cidadao Get(Guid key)
@@ -39,7 +47,7 @@ namespace SchedulingWebMobileApi.Core.Services
             var cidadao = _cidadaoRepository.Get(key);
 
             if (cidadao == null)
-                throw new NotFoundException("Cidadao not found");
+                throw new NotFoundException("Citizen not found");
 
             return cidadao;
         }
@@ -65,7 +73,22 @@ namespace SchedulingWebMobileApi.Core.Services
 
         public Cidadao Update(Cidadao entity)
         {
-            throw new NotImplementedException();
+            var cidadao = Get(entity.CidadaoKey);
+
+            if (cidadao.Email != entity.Email && _cidadaoRepository.Exists(entity.Email))
+                throw new ForbbidenException("Email already exists");
+
+            if(cidadao.Cpf != entity.Cpf)
+                throw new ForbbidenException("CPF can't be updated");
+
+            try
+            {
+                return _cidadaoRepository.Update(entity);
+            }
+            catch (Exception)
+            {
+                throw new InternalServerErrorException("Not was possible update the user");
+            }
         }
     }
 }
