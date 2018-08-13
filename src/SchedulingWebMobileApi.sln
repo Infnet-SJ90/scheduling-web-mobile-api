@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulingWebMobileApi", "SchedulingWebMobileApi\SchedulingWebMobileApi.csproj", "{8143BF14-4B46-429C-9651-E03A82F53B4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchedulingWebMobileApi", "SchedulingWebMobileApi\SchedulingWebMobileApi.csproj", "{8143BF14-4B46-429C-9651-E03A82F53B4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulingWebMobileApi.Core", "SchedulingWebMobileApi.Core\SchedulingWebMobileApi.Core.csproj", "{74205B45-8683-425F-81C9-C9B88AEBDA61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchedulingWebMobileApi.Core", "SchedulingWebMobileApi.Core\SchedulingWebMobileApi.Core.csproj", "{74205B45-8683-425F-81C9-C9B88AEBDA61}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchedulingWebMobileApi.IoC", "SchedulingWebMobileApi.IoC\SchedulingWebMobileApi.IoC.csproj", "{890A061A-C07C-4EBC-9E69-C6B9B4519300}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulingWebMobileApi.Models", "SchedulingWebMobileApi.Models\SchedulingWebMobileApi.Models.csproj", "{B5AA4BCF-F2A7-4E36-9328-E6C3993CB729}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulingWebMobileApi.Application", "SchedulingWebMobileApi.Application\SchedulingWebMobileApi.Application.csproj", "{603FD2A1-DEDC-45E9-9C90-CA488DFEFF01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{74205B45-8683-425F-81C9-C9B88AEBDA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74205B45-8683-425F-81C9-C9B88AEBDA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74205B45-8683-425F-81C9-C9B88AEBDA61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{890A061A-C07C-4EBC-9E69-C6B9B4519300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{890A061A-C07C-4EBC-9E69-C6B9B4519300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{890A061A-C07C-4EBC-9E69-C6B9B4519300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{890A061A-C07C-4EBC-9E69-C6B9B4519300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5AA4BCF-F2A7-4E36-9328-E6C3993CB729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5AA4BCF-F2A7-4E36-9328-E6C3993CB729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5AA4BCF-F2A7-4E36-9328-E6C3993CB729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5AA4BCF-F2A7-4E36-9328-E6C3993CB729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{603FD2A1-DEDC-45E9-9C90-CA488DFEFF01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{603FD2A1-DEDC-45E9-9C90-CA488DFEFF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{603FD2A1-DEDC-45E9-9C90-CA488DFEFF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{603FD2A1-DEDC-45E9-9C90-CA488DFEFF01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

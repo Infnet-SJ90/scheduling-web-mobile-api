@@ -5,12 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="7.0.1" />
-    <PackageReference Include="Dapper" Version="1.50.5" />
-    <PackageReference Include="MySqlConnector" Version="0.43.0" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\SchedulingWebMobileApi.Core\SchedulingWebMobileApi.Core.csproj" />
     <ProjectReference Include="..\SchedulingWebMobileApi.Models\SchedulingWebMobileApi.Models.csproj" />
   </ItemGroup>
 
