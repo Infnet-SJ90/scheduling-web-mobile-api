@@ -39,7 +39,19 @@ namespace SchedulingWebMobileApi.Application.AppServices
 
         public IResponse Delete(Guid key)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _cidadaoService.Delete(key);
+                return new AcceptResponseModel();
+            }
+            catch (NotFoundException ex)
+            {
+                return new NotFoundResponseModel(ex.Message);
+            }
+            catch (InternalServerErrorException ex)
+            {
+                return new InternoServerErrorResponseModel(ex.Message);
+            }
         }
 
         public IResponse Get(Guid key)
