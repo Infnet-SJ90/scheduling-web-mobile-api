@@ -95,7 +95,7 @@ namespace SchedulingWebMobileApi.Core.Repository
             try
             {
                 _connection.Open();
-                return _connection.QueryFirstOrDefault<Cidadao>("SELECT * FROM CIDADAO WHERE CidadaoKey = @CidadaoKey LIMIT 1", new { UserKey = key });
+                return _connection.QueryFirstOrDefault<Cidadao>("SELECT * FROM CIDADAO WHERE CidadaoKey = @CidadaoKey LIMIT 1", new { CidadaoKey = key });
             }
             catch (Exception)
             {
