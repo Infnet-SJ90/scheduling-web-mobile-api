@@ -17,12 +17,12 @@ namespace SchedulingWebMobileApi.Core.Repository
             try
             {
                 _connection.Open();
-                var cidadao = _connection.QueryFirstOrDefault<Cidadao>("SELECT * FROM Cidadao WHERE (Email = @Email OR Cpf = @Cpf) and Senha = @Senha LIMIT 1", new { Email = authentication.Email, Senha = authentication.Senha, Cpf = authentication.Cpf });
+                var cidadaoKey = _connection.QueryFirstOrDefault<Guid>("SELECT CidadaoKey FROM Cidadao WHERE (Email = @Email OR Cpf = @Cpf) and Senha = @Senha LIMIT 1", new { Email = authentication.Email, Senha = authentication.Senha, Cpf = authentication.Cpf });
 
-                if (cidadao != null)
+                if (cidadaoKey != null && cidadaoKey != Guid.Empty)
                 {
                     var token = Guid.NewGuid();
-                    _connection.Execute("INSERT INTO Authentication (CidadaoKey, Token, AuhenticationType, Date) VALUES (@CidadaoKey, @Token, @AuhenticationType, @Date)", new { CidadaoKey = cidadao.CidadaoKey, Token = token, AuthenticationType = authentication.AuthenticationType, Date = DateTime.Now });
+                    _connection.Execute("INSERT INTO Authentication (CidadaoKey, Token, AuhenticationType, Date) VALUES (@CidadaoKey, @Token, @AuhenticationType, @Date)", new { CidadaoKey = cidadaoKey, Token = token, AuthenticationType = authentication.AuthenticationType, Date = DateTime.Now });
 
                     return token;
                 }
