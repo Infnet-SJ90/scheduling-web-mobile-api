@@ -16,4 +16,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SchedulingWebMobileApi.Application\SchedulingWebMobileApi.Application.csproj" />
+    <ProjectReference Include="..\SchedulingWebMobileApi.IoC\SchedulingWebMobileApi.IoC.csproj" />
+  </ItemGroup>
+
 </Project>
