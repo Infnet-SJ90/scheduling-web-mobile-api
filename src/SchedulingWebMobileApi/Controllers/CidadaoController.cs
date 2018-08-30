@@ -1,12 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SchedulingWebMobileApi.Application.Interfaces;
-using SchedulingWebMobileApi.Core.Entities;
-using SchedulingWebMobileApi.Core.Mapper;
 using SchedulingWebMobileApi.Models.Models.Request;
-using SchedulingWebMobileApi.Models.Request;
 using SchedulingWebMobileApi.Models.Response.Common;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -18,24 +14,10 @@ namespace SchedulingWebMobileApi.Controllers
     public class CidadaoController : Controller
     {
         private readonly ICidadaoAppService _cidadaoAppService;
-        private readonly IMapperAdapter _mapperAdapter;
 
-        public CidadaoController(ICidadaoAppService cidadaoAppService, IMapperAdapter mapperAdapter)
+        public CidadaoController(ICidadaoAppService cidadaoAppService)
         {
             this._cidadaoAppService = cidadaoAppService;
-            _mapperAdapter = mapperAdapter;
-        }
-
-        [HttpPost("/authentication")]
-        public IActionResult Authentication([FromBody]AuthenticationRequestModel authentication)
-        {
-            if (authentication.IsValid())
-            {
-                var response = _cidadaoAppService.Authentication(authentication);
-            }
-
-            var badRequest = new BadRequestResponse("The fields E-mail/Cpf and Senha are required");
-            return new ObjectResult(badRequest) { StatusCode = badRequest.StatusCode() };
         }
 
         [HttpGet("{key}")]
