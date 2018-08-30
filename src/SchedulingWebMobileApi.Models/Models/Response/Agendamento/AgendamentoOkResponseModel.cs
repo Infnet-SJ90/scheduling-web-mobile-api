@@ -1,12 +1,14 @@
 ﻿using SchedulingWebMobileApi.Models.Response.Common;
+using System;
 using System.Collections.Generic;
+using System.Text;
 
-namespace SchedulingWebMobileApi.Models.Models.Response.Authentication
+namespace SchedulingWebMobileApi.Models.Models.Response.Agendamento
 {
-    public class AuthenticationOkResponseModel : IResponse<AuthenticationResponseModel>
+    public class AgendamentoOkResponseModel : IResponse<AgendamentoResponseModel>
     {
-        public AuthenticationOkResponseModel() { }
-        public AuthenticationOkResponseModel(string messageFail)
+        public AgendamentoOkResponseModel() { }
+        public AgendamentoOkResponseModel(string messageFail)
         {
             Errors = new List<ErrorModelResponse>
             {
@@ -14,7 +16,7 @@ namespace SchedulingWebMobileApi.Models.Models.Response.Authentication
             };
         }
 
-        public AuthenticationResponseModel Result { get; set; }
+        public AgendamentoResponseModel Result { get; set; }
         public IList<ErrorModelResponse> Errors { get; set; }
 
         public int StatusCode()

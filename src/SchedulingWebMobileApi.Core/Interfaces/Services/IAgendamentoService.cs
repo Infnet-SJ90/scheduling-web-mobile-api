@@ -2,7 +2,7 @@
 
 namespace SchedulingWebMobileApi.Core.Interfaces.Services
 {
-    public interface ICidadaoService : IServiceBase<Cidadao>
+    public interface IAgendamentoService : IServiceBase<Agendamento>
     {
     }
 }
