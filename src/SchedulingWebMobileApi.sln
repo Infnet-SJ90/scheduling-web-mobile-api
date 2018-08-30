@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchedulingWebMobileApi.Core
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchedulingWebMobileApi.IoC", "SchedulingWebMobileApi.IoC\SchedulingWebMobileApi.IoC.csproj", "{890A061A-C07C-4EBC-9E69-C6B9B4519300}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulingWebMobileApi.Models", "SchedulingWebMobileApi.Models\SchedulingWebMobileApi.Models.csproj", "{B5AA4BCF-F2A7-4E36-9328-E6C3993CB729}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchedulingWebMobileApi.Models", "SchedulingWebMobileApi.Models\SchedulingWebMobileApi.Models.csproj", "{B5AA4BCF-F2A7-4E36-9328-E6C3993CB729}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulingWebMobileApi.Application", "SchedulingWebMobileApi.Application\SchedulingWebMobileApi.Application.csproj", "{603FD2A1-DEDC-45E9-9C90-CA488DFEFF01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchedulingWebMobileApi.Application", "SchedulingWebMobileApi.Application\SchedulingWebMobileApi.Application.csproj", "{603FD2A1-DEDC-45E9-9C90-CA488DFEFF01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulingWebMobileApi.Context", "SchedulingWebMobileApi.Context\SchedulingWebMobileApi.Context.csproj", "{D2CABBA7-80B3-4A8A-B0BA-5CCE242BC59B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulingWebMobileApi.Domain", "SchedulingWebMobileApi.Domain\SchedulingWebMobileApi.Domain.csproj", "{C9775EA7-77A7-421D-A3FC-DB9B665E0587}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{603FD2A1-DEDC-45E9-9C90-CA488DFEFF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{603FD2A1-DEDC-45E9-9C90-CA488DFEFF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{603FD2A1-DEDC-45E9-9C90-CA488DFEFF01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2CABBA7-80B3-4A8A-B0BA-5CCE242BC59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2CABBA7-80B3-4A8A-B0BA-5CCE242BC59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2CABBA7-80B3-4A8A-B0BA-5CCE242BC59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2CABBA7-80B3-4A8A-B0BA-5CCE242BC59B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9775EA7-77A7-421D-A3FC-DB9B665E0587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9775EA7-77A7-421D-A3FC-DB9B665E0587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9775EA7-77A7-421D-A3FC-DB9B665E0587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9775EA7-77A7-421D-A3FC-DB9B665E0587}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
