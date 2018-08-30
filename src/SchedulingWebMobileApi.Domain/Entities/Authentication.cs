@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SchedulingWebMobileApi.Core.Entities
+namespace SchedulingWebMobileApi.Domain
 {
     public class Authentication
     {

@@ -11,7 +11,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SchedulingWebMobileApi.Context\SchedulingWebMobileApi.Context.csproj" />
+    <ProjectReference Include="..\SchedulingWebMobileApi.Domain\SchedulingWebMobileApi.Domain.csproj" />
     <ProjectReference Include="..\SchedulingWebMobileApi.Models\SchedulingWebMobileApi.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.http.abstractions\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

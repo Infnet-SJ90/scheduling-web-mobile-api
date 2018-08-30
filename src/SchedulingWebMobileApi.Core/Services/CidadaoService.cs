@@ -1,7 +1,7 @@
-﻿using SchedulingWebMobileApi.Core.Entities;
-using SchedulingWebMobileApi.Core.Exceptions;
+﻿using SchedulingWebMobileApi.Core.Exceptions;
 using SchedulingWebMobileApi.Core.Interfaces;
 using SchedulingWebMobileApi.Core.Interfaces.Services;
+using SchedulingWebMobileApi.Domain;
 using System;
 
 namespace SchedulingWebMobileApi.Core.Services
@@ -13,18 +13,6 @@ namespace SchedulingWebMobileApi.Core.Services
         public CidadaoService(ICidadaoRepository cidadaoRepository)
         {
             _cidadaoRepository = cidadaoRepository;
-        }
-
-        public Guid Authentication(Authentication cidadao)
-        {
-            try
-            {
-                return _cidadaoRepository.Authentication(cidadao);
-            }
-            catch (Exception)
-            {
-                throw new InternalServerErrorException("Not possible authenticate the cidadao");
-            }
         }
 
         public bool Delete(Guid key)

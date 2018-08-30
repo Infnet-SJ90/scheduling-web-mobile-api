@@ -1,5 +1,4 @@
-﻿using SchedulingWebMobileApi.Core.Entities;
-using System;
+﻿using SchedulingWebMobileApi.Domain;
 
 namespace SchedulingWebMobileApi.Core.Interfaces
 {
@@ -7,6 +6,5 @@ namespace SchedulingWebMobileApi.Core.Interfaces
     {
         bool Exists(Cidadao cidadao);
         bool Exists(string email);
-        Guid Authentication(Authentication cidadao);
     }
 }
