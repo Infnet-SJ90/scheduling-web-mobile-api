@@ -1,4 +1,5 @@
 ﻿using SchedulingWebMobileApi.Domain;
+using SchedulingWebMobileApi.Models.Models.Response.Local;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -13,5 +14,6 @@ namespace SchedulingWebMobileApi.Models.Models.Response.Agendamento
         public string Hora { get; set; }
         public string Tipo { get; set; }
         public string Status { get; set; }
+        public LocalResponseModel Endereco { get; set; }
     }
 }

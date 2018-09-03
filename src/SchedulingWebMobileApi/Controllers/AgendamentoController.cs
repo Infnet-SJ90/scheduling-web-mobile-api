@@ -22,9 +22,10 @@ namespace SchedulingWebMobileApi.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            var response = this._agendamentoAppService.GetAll();
+            return new ObjectResult(response) { StatusCode = response.StatusCode() };
         }
 
         [HttpGet("{key}")]

@@ -24,16 +24,23 @@ namespace SchedulingWebMobileApi.Core.Mapper
 
                 config.CreateMap<Guid, AuthenticationOkResponseModel>()
                     .ForPath(dest => dest.Result.Token, opt => opt.MapFrom(src => src));
+
                 config.CreateMap<Local, LocalOkResponseModel>()
                     .ForMember(dest => dest.Result, opt => opt.MapFrom(src => src));
                 config.CreateMap<Local, LocalResponseModel>();
                 config.CreateMap<IList<LocalResponseModel>, LocaisOkResponseModel>()
                     .ForMember(dest => dest.Result, opt => opt.MapFrom(src => src));
+
                 config.CreateMap<Cidadao, CidadaoOkResponseModel>()
                     .ForMember(dest => dest.Result, opt => opt.MapFrom(src => src));
+
+                config.CreateMap<Agendamento, AgendamentoResponseModel>()
+                    .ForPath(dest => dest.Data, opt => opt.MapFrom(src => $"{src.Data.ToString("dd/MM/yyyy")}"))
+                    .ForPath(dest => dest.Hora, opt => opt.MapFrom(src => $"{src.Hora.ToString("HH:mm")}"));
+                config.CreateMap<IList<AgendamentoResponseModel>, AgendamentosOkResponseModel>()
+                    .ForMember(dest => dest.Result, opt => opt.MapFrom(src => src));
                 config.CreateMap<Agendamento, AgendamentoOkResponseModel>()
-                    .ForPath(dest => dest.Result.Data, opt => opt.MapFrom(src => $"{src.Data.Day.ToString().PadLeft(2, '0')}/{src.Data.Month.ToString().PadLeft(2, '0')}/{src.Data.Year}"))
-                    .ForPath(dest => dest.Result.Hora, opt => opt.MapFrom(src => $"{src.Hora.Hour.ToString().PadLeft(2, '0')}:{src.Hora.Minute.ToString().PadLeft(2, '0')}:{src.Hora.Second.ToString().PadLeft(2, '0')}"))
+                    .ForPath(dest => dest.Result.Endereco, opt => opt.MapFrom(src => src.Endereco))
                     .ForMember(dest => dest.Result, opt => opt.MapFrom(src => src));
             });
         }

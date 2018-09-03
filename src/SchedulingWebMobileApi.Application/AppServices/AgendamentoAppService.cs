@@ -10,6 +10,7 @@ using SchedulingWebMobileApi.Models.Models.Response.Agendamento;
 using SchedulingWebMobileApi.Models.Models.Response.Common;
 using SchedulingWebMobileApi.Models.Response.Common;
 using System;
+using System.Collections.Generic;
 
 namespace SchedulingWebMobileApi.Application.AppServices
 {
@@ -65,6 +66,29 @@ namespace SchedulingWebMobileApi.Application.AppServices
                 return new NotFoundResponseModel(ex.Message);
             }
             catch(Exception ex)
+            {
+                return new InternoServerErrorResponseModel(ex.Message);
+            }
+        }
+
+        public IResponse GetAll()
+        {
+            try
+            {
+                var token = Context.Request.Headers["Token"];
+
+                if (!_authAppService.IsTokenValid(Guid.Parse(token)))
+                    return new UnauthorizedResponseModel("Citezen not authenticated");
+
+                var agendamentos = _agendamentoService.Get();
+                var agendamentosResponse = _mapperAdapter.Map<IList<Agendamento>, IList<AgendamentoResponseModel>>(agendamentos);
+                return _mapperAdapter.Map<IList<AgendamentoResponseModel>, AgendamentosOkResponseModel>(agendamentosResponse);
+            }
+            catch (NotFoundException ex)
+            {
+                return new NotFoundResponseModel(ex.Message);
+            }
+            catch (Exception ex)
             {
                 return new InternoServerErrorResponseModel(ex.Message);
             }

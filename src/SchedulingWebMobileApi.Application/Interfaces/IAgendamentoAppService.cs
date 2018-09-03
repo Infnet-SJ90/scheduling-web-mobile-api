@@ -9,5 +9,6 @@ namespace SchedulingWebMobileApi.Application.Interfaces
 {
     public interface IAgendamentoAppService : IAppServiceBase<AgendamentoRequestModel, IResponse>
     {
+        IResponse GetAll();
     }
 }
