@@ -32,6 +32,7 @@ namespace SchedulingWebMobileApi.IoC
             services.AddTransient<ICidadaoRepository, CidadaoRepository>();
             services.AddTransient<IAuthRepository, AuthRepository>();
             services.AddTransient<IAgendamentoRepository, AgendamentoRepository>();
+            services.AddTransient<ILocalRepository, LocalRepository>();
         }
 
         private static void RegisterApplicationServices(IServiceCollection services)
@@ -39,6 +40,7 @@ namespace SchedulingWebMobileApi.IoC
             services.AddTransient<ICidadaoAppService, CidadaoAppService>();
             services.AddTransient<IAuthAppService, AuthAppService>();
             services.AddTransient<IAgendamentoAppService, AgendamentoAppService>();
+            services.AddTransient<ILocalAppService, LocalAppService>();
         }
 
         private static void RegisterDomainServices(IServiceCollection services)
@@ -46,6 +48,7 @@ namespace SchedulingWebMobileApi.IoC
             services.AddTransient<ICidadaoService, CidadaoService>();
             services.AddTransient<IAuthService, AuthService>();
             services.AddTransient<IAgendamentoService, AgendamentoService>();
+            services.AddTransient<ILocalService, LocalService>();
         }
     }
 }
