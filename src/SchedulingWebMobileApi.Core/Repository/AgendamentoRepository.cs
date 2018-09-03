@@ -53,7 +53,7 @@ namespace SchedulingWebMobileApi.Core.Repository
             try
             {
                 _connection.Open();
-                var agendamento =  _connection.QueryFirstOrDefault<dynamic>("SELECT Agendamento.AgendamentoKey, " +
+                var agendamento = _connection.QueryFirstOrDefault<dynamic>("SELECT Agendamento.AgendamentoKey, " +
                     "DATE_FORMAT(Agendamento.Data, '%d/%m/%Y %H:%i:%s') as Data, " +
                     "DATE_FORMAT(Agendamento.Hora, '%d/%m/%Y %H:%i:%s') as Hora, " +
                     "Agendamento.Tipo, Agendamento.Status, Endereco.* " +
@@ -61,24 +61,29 @@ namespace SchedulingWebMobileApi.Core.Repository
                     "INNER JOIN Endereco on Endereco.enderecoKey = Agendamento.Enderecokey " +
                     "WHERE AgendamentoKey = @AgendamentoKey LIMIT 1", new { AgendamentoKey = key });
 
-                return new Agendamento()
+                if (agendamento != null)
                 {
-                    AgendamentoKey = agendamento.AgendamentoKey,
-                    Data = DateTime.Parse(agendamento.Data),
-                    Hora = DateTime.Parse(agendamento.Hora),
-                    Tipo = agendamento.Tipo,
-                    Status = agendamento.Status,
-                    Endereco = new Local()
+                    return new Agendamento()
                     {
-                        EnderecoKey = agendamento.EnderecoKey,
-                        Bairro = agendamento.Bairro,
-                        Cep = agendamento.Cep,
-                        Cidade = agendamento.Cidade,
-                        Estado = agendamento.Estado,
-                        Numero = agendamento.Numero,
-                        Rua = agendamento.Rua
-                    }
-                };
+                        AgendamentoKey = agendamento.AgendamentoKey,
+                        Data = DateTime.Parse(agendamento.Data),
+                        Hora = DateTime.Parse(agendamento.Hora),
+                        Tipo = agendamento.Tipo,
+                        Status = agendamento.Status,
+                        Endereco = new Local()
+                        {
+                            EnderecoKey = agendamento.EnderecoKey,
+                            Bairro = agendamento.Bairro,
+                            Cep = agendamento.Cep,
+                            Cidade = agendamento.Cidade,
+                            Estado = agendamento.Estado,
+                            Numero = agendamento.Numero,
+                            Rua = agendamento.Rua
+                        }
+                    };
+                }
+
+                return agendamento;
             }
             catch (Exception ex)
             {
