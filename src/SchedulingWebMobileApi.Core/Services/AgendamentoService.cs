@@ -3,6 +3,7 @@ using SchedulingWebMobileApi.Core.Interfaces;
 using SchedulingWebMobileApi.Core.Interfaces.Services;
 using SchedulingWebMobileApi.Domain;
 using System;
+using System.Collections.Generic;
 
 namespace SchedulingWebMobileApi.Core.Services
 {
@@ -38,6 +39,16 @@ namespace SchedulingWebMobileApi.Core.Services
                 throw new NotFoundException("Scheduling not found");
 
             return agendamento;
+        }
+
+        public IList<Agendamento> Get()
+        {
+            var agendamentos = _agendamentoRepository.Get();
+
+            if (agendamentos == null)
+                throw new NotFoundException("Schedules not found");
+
+            return agendamentos;
         }
 
         public Agendamento Insert(Agendamento entity)

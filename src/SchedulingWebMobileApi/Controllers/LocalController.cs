@@ -1,46 +1,45 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SchedulingWebMobileApi.Application.Interfaces;
 using SchedulingWebMobileApi.Models.Models.Request;
+using SchedulingWebMobileApi.Models.Models.Response.Common;
 using SchedulingWebMobileApi.Models.Response.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace SchedulingWebMobileApi.Controllers
 {
     [Produces("application/json")]
-    [Route("v1/agendamento")]
-    public class AgendamentoController : Controller
+    [Route("v1/local")]
+    public class LocalController : Controller
     {
-        private readonly IAgendamentoAppService _agendamentoAppService;
+        private readonly ILocalAppService _localAppService;
 
-        public AgendamentoController(IAgendamentoAppService agendamentoAppService)
+        public LocalController(ILocalAppService localAppService)
         {
-            _agendamentoAppService = agendamentoAppService;
+            _localAppService = localAppService;
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            var response = this._agendamentoAppService.GetAll();
+            var response = this._localAppService.GetAll();
             return new ObjectResult(response) { StatusCode = response.StatusCode() };
         }
 
         [HttpGet("{key}")]
         public IActionResult Get(Guid key)
         {
-            var response = this._agendamentoAppService.Get(key);
+            var response = this._localAppService.Get(key);
             return new ObjectResult(response) { StatusCode = response.StatusCode() };
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody]AgendamentoRequestModel agendamento)
+        public IActionResult Post([FromBody]LocalRequestModel local)
         {
             if (ModelState.IsValid)
             {
-                var response = this._agendamentoAppService.Insert(agendamento);
+                var response = this._localAppService.Insert(local);
                 return new ObjectResult(response) { StatusCode = response.StatusCode() };
             }
 
@@ -49,16 +48,16 @@ namespace SchedulingWebMobileApi.Controllers
         }
 
         [HttpPut]
-        public IActionResult Put([FromBody]AgendamentoRequestModel agendamento)
+        public IActionResult Put([FromBody]LocalRequestModel local)
         {
-            var response = this._agendamentoAppService.Update(agendamento);
+            var response = new UnauthorizedResponseModel("you don't have permission.");
             return new ObjectResult(response) { StatusCode = response.StatusCode() };
         }
 
         [HttpDelete("{key}")]
         public IActionResult Delete(Guid key)
         {
-            var response = this._agendamentoAppService.Delete(key);
+            var response = this._localAppService.Delete(key);
             return new ObjectResult(response) { StatusCode = response.StatusCode() };
         }
     }

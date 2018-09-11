@@ -6,7 +6,7 @@ using SchedulingWebMobileApi.Core.Interfaces.Services;
 using SchedulingWebMobileApi.Core.Mapper;
 using SchedulingWebMobileApi.Domain;
 using SchedulingWebMobileApi.Models.Models.Request;
-using SchedulingWebMobileApi.Models.Models.Response.Agendamento;
+using SchedulingWebMobileApi.Models.Models.Response.Local;
 using SchedulingWebMobileApi.Models.Models.Response.Common;
 using SchedulingWebMobileApi.Models.Response.Common;
 using System;
@@ -14,15 +14,15 @@ using System.Collections.Generic;
 
 namespace SchedulingWebMobileApi.Application.AppServices
 {
-    public class AgendamentoAppService : BaseResource, IAgendamentoAppService
+    public class LocalAppService : BaseResource, ILocalAppService
     {
-        private readonly IAgendamentoService _agendamentoService;
+        private readonly ILocalService _localService;
         private readonly IMapperAdapter _mapperAdapter;
         private readonly IAuthAppService _authAppService;
 
-        public AgendamentoAppService(IHttpContextAccessor context, IAgendamentoService agendamentoService, IAuthAppService authAppService, IMapperAdapter mapperAdapter) : base(context)
+        public LocalAppService(IHttpContextAccessor context, ILocalService localService, IAuthAppService authAppService, IMapperAdapter mapperAdapter) : base(context)
         {
-            _agendamentoService = agendamentoService;
+            _localService = localService;
             _mapperAdapter = mapperAdapter;
             _authAppService = authAppService;
         }
@@ -36,7 +36,7 @@ namespace SchedulingWebMobileApi.Application.AppServices
                 if (!_authAppService.IsTokenValid(Guid.Parse(token)))
                     return new UnauthorizedResponseModel("Citezen not authenticated");
 
-                _agendamentoService.Delete(key);
+                _localService.Delete(key);
                 return new AcceptResponseModel();
             }
             catch (NotFoundException ex)
@@ -58,8 +58,8 @@ namespace SchedulingWebMobileApi.Application.AppServices
                 if (!_authAppService.IsTokenValid(Guid.Parse(token)))
                     return new UnauthorizedResponseModel("Citezen not authenticated");
 
-                var agendamento = _agendamentoService.Get(key);
-                return _mapperAdapter.Map<Agendamento, AgendamentoOkResponseModel>(agendamento);
+                var local = _localService.Get(key);
+                return _mapperAdapter.Map<Local, LocalOkResponseModel>(local);
             }
             catch (NotFoundException ex)
             {
@@ -80,9 +80,9 @@ namespace SchedulingWebMobileApi.Application.AppServices
                 if (!_authAppService.IsTokenValid(Guid.Parse(token)))
                     return new UnauthorizedResponseModel("Citezen not authenticated");
 
-                var agendamentos = _agendamentoService.Get();
-                var agendamentosResponse = _mapperAdapter.Map<IList<Agendamento>, IList<AgendamentoResponseModel>>(agendamentos);
-                return _mapperAdapter.Map<IList<AgendamentoResponseModel>, AgendamentosOkResponseModel>(agendamentosResponse);
+                var locais = _localService.Get();
+                var locaisResponse = _mapperAdapter.Map<IList<Local>, IList<LocalResponseModel>>(locais);
+                return _mapperAdapter.Map<IList<LocalResponseModel>, LocaisOkResponseModel>(locaisResponse);
             }
             catch (NotFoundException ex)
             {
@@ -94,7 +94,7 @@ namespace SchedulingWebMobileApi.Application.AppServices
             }
         }
 
-        public IResponse Insert(AgendamentoRequestModel entity)
+        public IResponse Insert(LocalRequestModel entity)
         {
             try
             {
@@ -103,9 +103,9 @@ namespace SchedulingWebMobileApi.Application.AppServices
                 if (!_authAppService.IsTokenValid(Guid.Parse(token)))
                     return new UnauthorizedResponseModel("Citezen not authenticated");
 
-                var agendamento = _mapperAdapter.Map<AgendamentoRequestModel, Agendamento>(entity);
-                agendamento = _agendamentoService.Insert(agendamento);
-                return _mapperAdapter.Map<Agendamento, AgendamentoOkResponseModel>(agendamento);
+                var local = _mapperAdapter.Map<LocalRequestModel, Local>(entity);
+                local = _localService.Insert(local);
+                return _mapperAdapter.Map<Local, LocalOkResponseModel>(local);
             }
             catch (ForbbidenException ex)
             {
@@ -117,7 +117,7 @@ namespace SchedulingWebMobileApi.Application.AppServices
             }
         }
 
-        public IResponse Update(AgendamentoRequestModel entity)
+        public IResponse Update(LocalRequestModel entity)
         {
             try
             {
@@ -126,9 +126,9 @@ namespace SchedulingWebMobileApi.Application.AppServices
                 if (!_authAppService.IsTokenValid(Guid.Parse(token)))
                     return new UnauthorizedResponseModel("Citezen not authenticated");
 
-                var agendamento = _mapperAdapter.Map<AgendamentoRequestModel, Agendamento>(entity);
-                agendamento = _agendamentoService.Update(agendamento);
-                return _mapperAdapter.Map<Agendamento, AgendamentoOkResponseModel>(agendamento);
+                var local = _mapperAdapter.Map<LocalRequestModel, Local>(entity);
+                local = _localService.Update(local);
+                return _mapperAdapter.Map<Local, LocalOkResponseModel>(local);
             }
             catch (NotFoundException ex)
             {

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace SchedulingWebMobileApi.Core.Interfaces.Services
 {
-    public interface IAgendamentoService : IServiceBase<Agendamento>
+    public interface ILocalService : IServiceBase<Local>
     {
-        IList<Agendamento> Get();
+        IList<Local> Get();
     }
 }

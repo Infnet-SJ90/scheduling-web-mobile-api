@@ -7,7 +7,7 @@ using System.Text;
 
 namespace SchedulingWebMobileApi.Application.Interfaces
 {
-    public interface IAgendamentoAppService : IAppServiceBase<AgendamentoRequestModel, IResponse>
+    public interface ILocalAppService : IAppServiceBase<LocalRequestModel, IResponse>
     {
         IResponse GetAll();
     }
