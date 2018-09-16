@@ -59,25 +59,33 @@ namespace SchedulingWebMobileApi.Core.Services
             {
                 entity.AgendamentoKey = Guid.NewGuid();
 
-                var hasScheduling = _agendamentoRepository.Exists(entity);
-
                 var address = _localRepository.Get(entity.Endereco.EnderecoKey);
-                
+
                 if (address == null)
                     throw new NotFoundException("Address not found");
+
+                var hasScheduling = _agendamentoRepository.Exists(entity);
 
                 if (!hasScheduling)
                 {
                     entity.Endereco = address;
                     return _agendamentoRepository.Insert(entity);
                 }
+
+                throw new ForbbidenException("Scheduling already exists");
+            }
+            catch(ForbbidenException ex)
+            {
+                throw new ForbbidenException($"Not was possible insert the Scheduling: {ex.Message}");
+            }
+            catch (NotFoundException ex)
+            {
+                throw new NotFoundException($"Not was possible insert the Scheduling: {ex.Message}");
             }
             catch (Exception ex)
             {
                 throw new InternalServerErrorException($"Not was possible insert the Scheduling: {ex.Message}");
             }
-
-            throw new ForbbidenException("Scheduling already exists");
         }
 
         public Agendamento Update(Agendamento entity)
@@ -96,6 +104,14 @@ namespace SchedulingWebMobileApi.Core.Services
                 }
 
                 return _agendamentoRepository.Update(entity);
+            }
+            catch (ForbbidenException ex)
+            {
+                throw new ForbbidenException($"Not was possible update the Scheduling: {ex.Message}");
+            }
+            catch (NotFoundException ex)
+            {
+                throw new NotFoundException($"Not was possible update the Scheduling: {ex.Message}");
             }
             catch (Exception ex)
             {
