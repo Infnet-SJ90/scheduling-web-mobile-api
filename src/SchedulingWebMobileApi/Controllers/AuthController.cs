@@ -24,6 +24,7 @@ namespace SchedulingWebMobileApi.Controllers
             if (authentication.IsValid())
             {
                 var response = _authAppService.Authentication(authentication);
+                return new ObjectResult(response) { StatusCode = response.StatusCode() };
             }
 
             var badRequest = new BadRequestResponse("The fields E-mail/Cpf and Senha are required");
