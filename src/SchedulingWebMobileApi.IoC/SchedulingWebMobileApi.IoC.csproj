@@ -16,10 +16,8 @@
     <ProjectReference Include="..\SchedulingWebMobileApi.Core\SchedulingWebMobileApi.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="Microsoft.AspNetCore.Http">
-      <HintPath>..\..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.http\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Http.dll</HintPath>
-    </Reference>
+    <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
   </ItemGroup>
 
 </Project>

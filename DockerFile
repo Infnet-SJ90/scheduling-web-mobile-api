@@ -1,0 +1,17 @@
+FROM microsoft/dotnet:sdk AS builder
+#FROM microsoft/aspnetcore-build:2.0 AS builder
+
+WORKDIR /source
+
+#Copy everything else and build
+COPY ./src ./
+RUN dotnet restore
+RUN dotnet publish -c release --output /app/
+
+#Build runtime image
+FROM microsoft/aspnetcore:2.0
+WORKDIR /app
+#ENV ASPNETCORE_ENVIRONMENT="Development"
+COPY --from=builder /app .
+
+ENTRYPOINT [ "dotnet", "SchedulingWebMobileApi.dll"]
