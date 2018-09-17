@@ -22,7 +22,6 @@ namespace SchedulingWebMobileApi.Controllers
         public IActionResult Index()
         {
             var content = System.IO.File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "/View/index.html");
-            content += _configuration.GetConnectionString("Database");
             return new ContentResult()
             {
                 Content = content,
