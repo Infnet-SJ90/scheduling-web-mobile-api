@@ -10,10 +10,12 @@ namespace SchedulingWebMobileApi.Core.Services
     public class AgendamentoService : IAgendamentoService
     {
         private readonly IAgendamentoRepository _agendamentoRepository;
+        private readonly ILocalRepository _localRepository;
 
-        public AgendamentoService(IAgendamentoRepository agendamentoRepository)
+        public AgendamentoService(IAgendamentoRepository agendamentoRepository, ILocalRepository localRepository)
         {
             _agendamentoRepository = agendamentoRepository;
+            _localRepository = localRepository;
         }
 
         public bool Delete(Guid key)
@@ -57,32 +59,59 @@ namespace SchedulingWebMobileApi.Core.Services
             {
                 entity.AgendamentoKey = Guid.NewGuid();
 
+                var address = _localRepository.Get(entity.Endereco.EnderecoKey);
+
+                if (address == null)
+                    throw new NotFoundException("Address not found");
+
                 var hasScheduling = _agendamentoRepository.Exists(entity);
-                //VALIDAR SE O TOKEN DO ENDEREÇO EXISTE
 
                 if (!hasScheduling)
+                {
+                    entity.Endereco = address;
                     return _agendamentoRepository.Insert(entity);
+                }
+
+                throw new ForbbidenException("Scheduling already exists");
+            }
+            catch(ForbbidenException ex)
+            {
+                throw new ForbbidenException($"Not was possible insert the Scheduling: {ex.Message}");
+            }
+            catch (NotFoundException ex)
+            {
+                throw new NotFoundException($"Not was possible insert the Scheduling: {ex.Message}");
             }
             catch (Exception ex)
             {
                 throw new InternalServerErrorException($"Not was possible insert the Scheduling: {ex.Message}");
             }
-
-            throw new ForbbidenException("Scheduling already exists");
         }
 
         public Agendamento Update(Agendamento entity)
         {
-            var agendamento = Get(entity.AgendamentoKey);
-
-            if (agendamento.Data != entity.Data || agendamento.Hora != entity.Hora && _agendamentoRepository.Exists(entity))
-                throw new ForbbidenException("Scheduling already exists");
-
-            //VALIDAR SE O TOKEN DO ENDEREÇO É DIFERENTE EXISTE
-
             try
             {
+                var agendamento = Get(entity.AgendamentoKey);
+
+                if ((agendamento.Data != entity.Data || agendamento.Hora != entity.Hora) && _agendamentoRepository.Exists(entity))
+                    throw new ForbbidenException("Scheduling already exists");
+
+                if (agendamento.Endereco.EnderecoKey != entity.Endereco.EnderecoKey)
+                {
+                    var address = _localRepository.Get(entity.Endereco.EnderecoKey);
+                    entity.Endereco = address ?? throw new NotFoundException("New Address not found");
+                }
+
                 return _agendamentoRepository.Update(entity);
+            }
+            catch (ForbbidenException ex)
+            {
+                throw new ForbbidenException($"Not was possible update the Scheduling: {ex.Message}");
+            }
+            catch (NotFoundException ex)
+            {
+                throw new NotFoundException($"Not was possible update the Scheduling: {ex.Message}");
             }
             catch (Exception ex)
             {

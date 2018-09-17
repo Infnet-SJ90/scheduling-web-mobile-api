@@ -38,21 +38,29 @@ namespace SchedulingWebMobileApi.Controllers
         [HttpPost]
         public IActionResult Post([FromBody]AgendamentoRequestModel agendamento)
         {
-            if (ModelState.IsValid)
+            if (agendamento != null && agendamento.IsValid(ModelState))
             {
                 var response = this._agendamentoAppService.Insert(agendamento);
                 return new ObjectResult(response) { StatusCode = response.StatusCode() };
             }
 
-            var badRequest = new BadRequestResponse($"{ModelState.Keys.FirstOrDefault()} obrigatório");
+            var validate = ModelState.FirstOrDefault();
+            var badRequest = new BadRequestResponse($"{validate.Value.Errors.FirstOrDefault().ErrorMessage}");
             return new ObjectResult(badRequest) { StatusCode = badRequest.StatusCode() };
         }
 
         [HttpPut]
         public IActionResult Put([FromBody]AgendamentoRequestModel agendamento)
         {
-            var response = this._agendamentoAppService.Update(agendamento);
-            return new ObjectResult(response) { StatusCode = response.StatusCode() };
+            if (agendamento.IsValid(ModelState))
+            {
+                var response = this._agendamentoAppService.Update(agendamento);
+                return new ObjectResult(response) { StatusCode = response.StatusCode() };
+            }
+
+            var validate = ModelState.FirstOrDefault();
+            var badRequest = new BadRequestResponse($"{validate.Value.Errors.FirstOrDefault().ErrorMessage}");
+            return new ObjectResult(badRequest) { StatusCode = badRequest.StatusCode() };
         }
 
         [HttpDelete("{key}")]

@@ -107,6 +107,10 @@ namespace SchedulingWebMobileApi.Application.AppServices
                 agendamento = _agendamentoService.Insert(agendamento);
                 return _mapperAdapter.Map<Agendamento, AgendamentoOkResponseModel>(agendamento);
             }
+            catch (NotFoundException ex)
+            {
+                return new NotFoundResponseModel(ex.Message);
+            }
             catch (ForbbidenException ex)
             {
                 return new ForbbidenResponseModel(ex.Message);
