@@ -43,3 +43,5 @@ Yuri Souza foi o desenvolvedor do código e Pedro Bastos foi o responsável por 
 * **Yuri Souza** - [yurisouza](https://github.com/yurisouza)
 
 * **Pedro Bastos** - [pedroppbastos](https://github.com/pedroppbastos) 
+
+#### O.B.S.: Caso desejar ver como uttilizar nossos endpoints segue o endereço da nossa wiki: https://github.com/Infnet-SJ90/scheduling-web-mobile-api/wiki/API
