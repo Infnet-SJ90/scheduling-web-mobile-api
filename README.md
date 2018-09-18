@@ -2,17 +2,17 @@
 
 ## Começando
 
-Este repositorio tem como objetivo ser uma API para se conectar com os aplicativos mobile e web.
+Este repositório tem como objetivo ser uma API para se conectar com os aplicativos mobile e web.
 
 ### Pré-requisitos
 
-* docker
-* postan
-* visual studio 
+* Docker
+* Postman
+* Visual Studio 
 
 ### Rodando o projeto.
 
-• Clonar o repositorio
+• Clonar o repositório
 
 `git clone git@github.com:Infnet-SJ90/scheduling-web-mobile-api.git`
 
@@ -32,7 +32,7 @@ Este repositorio tem como objetivo ser uma API para se conectar com os aplicativ
 
 ## Desdobramento, desenvolvimento
 
-Yuri Souza foi o desenvolvedor do codigo e Pedro Bastos foi o responsavel por documentar os endpoints
+Yuri Souza foi o desenvolvedor do código e Pedro Bastos foi o responsável por documentar os endpoints
 
 ## Construido com
 
