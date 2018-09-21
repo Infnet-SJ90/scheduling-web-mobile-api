@@ -29,26 +29,26 @@ namespace SchedulingWebMobileApi.IoC
         private static void RegisterRepository(IServiceCollection services, IConfiguration configuration)
         {
             services.AddSingleton<IDbConnection>(new MySqlConnection(configuration.GetConnectionString("Database")));
-            services.AddTransient<ICidadaoRepository, CidadaoRepository>();
+            services.AddTransient<ICitezenRepository, CitezenRepository>();
             services.AddTransient<IAuthRepository, AuthRepository>();
-            services.AddTransient<IAgendamentoRepository, AgendamentoRepository>();
-            services.AddTransient<ILocalRepository, LocalRepository>();
+            services.AddTransient<ISchedulingRepository, SchedulingRepository>();
+            services.AddTransient<IAddressRepository, AddressRepository>();
         }
 
         private static void RegisterApplicationServices(IServiceCollection services)
         {
-            services.AddTransient<ICidadaoAppService, CidadaoAppService>();
+            services.AddTransient<ICitezenAppService, CitezenAppService>();
             services.AddTransient<IAuthAppService, AuthAppService>();
-            services.AddTransient<IAgendamentoAppService, AgendamentoAppService>();
-            services.AddTransient<ILocalAppService, LocalAppService>();
+            services.AddTransient<ISchedulingAppService, SchedulingAppService>();
+            services.AddTransient<IAddressAppService, AddressAppService>();
         }
 
         private static void RegisterDomainServices(IServiceCollection services)
         {
-            services.AddTransient<ICidadaoService, CidadaoService>();
+            services.AddTransient<ICitezenService, CitezenService>();
             services.AddTransient<IAuthService, AuthService>();
-            services.AddTransient<IAgendamentoService, AgendamentoService>();
-            services.AddTransient<ILocalService, LocalService>();
+            services.AddTransient<ISchedulingService, SchedulingService>();
+            services.AddTransient<IAddressService, AddressService>();
         }
     }
 }

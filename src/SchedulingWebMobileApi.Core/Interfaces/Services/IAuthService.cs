@@ -5,7 +5,7 @@ namespace SchedulingWebMobileApi.Core.Interfaces.Services
 {
     public interface IAuthService
     {
-        Guid Authentication(Authentication cidadao);
+        Guid Authentication(Authentication citezen);
         bool IsTokenValid(Guid token);
     }
 }
