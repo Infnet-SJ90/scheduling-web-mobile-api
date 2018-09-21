@@ -58,7 +58,7 @@ namespace SchedulingWebMobileApi.Core.Repository
                     "DATE_FORMAT(Scheduling.Hora, '%d/%m/%Y %H:%i:%s') as Hora, " +
                     "Scheduling.Tipo, Scheduling.Status, Address.* " +
                     "FROM Scheduling " +
-                    "INNER JOIN Address on Address.enderecoKey = Scheduling.Addresskey " +
+                    "INNER JOIN Address on Address.addressKey = Scheduling.Addresskey " +
                     "WHERE SchedulingKey = @SchedulingKey LIMIT 1", new { SchedulingKey = key });
 
                 if (scheduling != null)
