@@ -63,13 +63,13 @@
 									"raw": "{\n\t\"Cep\":\"00111-222\",\n\t\"Estado\":\"RJ\",\n\t\"Cidade\":\"Rio de Janeiro\",\n\t\"Bairro\":\"Centro\",\n\t\"Rua\":\"São Jose\",\n\t\"Numero\":\"87\"\n}"
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/local",
+									"raw": "{{url}}/{{version}}/address",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"local"
+										"address"
 									]
 								}
 							},
@@ -94,13 +94,13 @@
 									"raw": "{\n\t\"Cep\":\"00111-222\",\n\t\"Estado\":\"RJ\",\n\t\"Cidade\":\"Rio de Janeiro\",\n\t\"Bairro\":\"Centro\",\n\t\"Rua\":\"São Jose\",\n\t\"Numero\":\"13\"\n}"
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/local",
+									"raw": "{{url}}/{{version}}/address",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"local"
+										"address"
 									]
 								}
 							},
@@ -125,13 +125,13 @@
 									"raw": "{\n\t\"CidadaoKey\":\"\",\n\t\"Nome\":\"\",\n\t\"Email\":\"\",\n\t\"Cpf\":\"\",\n\t\"Senha\":\"\"\n}"
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/local/66c3254b-b95a-4d3b-aafe-b3e0b0125044",
+									"raw": "{{url}}/{{version}}/address/66c3254b-b95a-4d3b-aafe-b3e0b0125044",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"local",
+										"address",
 										"66c3254b-b95a-4d3b-aafe-b3e0b0125044"
 									]
 								}
@@ -154,13 +154,13 @@
 								],
 								"body": {},
 								"url": {
-									"raw": "{{url}}/{{version}}/local/66c3254b-b95a-4d3b-aafe-b3e0b0125044",
+									"raw": "{{url}}/{{version}}/address/66c3254b-b95a-4d3b-aafe-b3e0b0125044",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"local",
+										"address",
 										"66c3254b-b95a-4d3b-aafe-b3e0b0125044"
 									]
 								}
@@ -210,13 +210,13 @@
 									"raw": "{\n\t\"Nome\":\"Yuri\",\n\t\"Email\":\"yuri@sj90.com.br\",\n\t\"Cpf\":\"12345678992\",\n\t\"Senha\":\"123mudar\"\n}"
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/cidadao",
+									"raw": "{{url}}/{{version}}/citezen",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"cidadao"
+										"citezen"
 									]
 								}
 							},
@@ -234,16 +234,16 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"CidadaoKey\":\"2eefac75-acab-4f41-96e3-0aa4f5b8ff86\",\n\t\"Nome\":\"Yuri Pereira de Souza\",\n\t\"Email\":\"yuripsouza@sj90.com.br\",\n\t\"Cpf\":\"12345678992\",\n\t\"Senha\":\"123mudar\"\n}"
+									"raw": "{\n\t\"CitezenKey\":\"2eefac75-acab-4f41-96e3-0aa4f5b8ff86\",\n\t\"Nome\":\"Yuri Pereira de Souza\",\n\t\"Email\":\"yuripsouza@sj90.com.br\",\n\t\"Cpf\":\"12345678992\",\n\t\"Senha\":\"123mudar\"\n}"
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/cidadao",
+									"raw": "{{url}}/{{version}}/citezen",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"cidadao"
+										"citezen"
 									]
 								}
 							},
@@ -264,13 +264,13 @@
 									"raw": "{\n\t\"CidadaoKey\":\"\",\n\t\"Nome\":\"\",\n\t\"Email\":\"\",\n\t\"Cpf\":\"\",\n\t\"Senha\":\"\"\n}"
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/cidadao/2eefac75-acab-4f41-96e3-0aa4f5b8ff86",
+									"raw": "{{url}}/{{version}}/citezen/2eefac75-acab-4f41-96e3-0aa4f5b8ff86",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"cidadao",
+										"citezen",
 										"2eefac75-acab-4f41-96e3-0aa4f5b8ff86"
 									]
 								}
@@ -292,13 +292,13 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/cidadao/KEY",
+									"raw": "{{url}}/{{version}}/citezen/KEY",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"cidadao",
+										"citezen",
 										"KEY"
 									]
 								}
@@ -349,16 +349,16 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"Data\":\"05/04/2018\",\n\t\"Hora\":\"14:00:00\",\n\t\"Tipo\":\"A\",\n\t\"Status\":\"A\",\n\t\"EnderecoKey\":\"fe725a29-56a9-4daa-805b-91bb9c24775c\"\n}"
+									"raw": "{\n\t\"Data\":\"05/04/2018\",\n\t\"Hora\":\"14:00:00\",\n\t\"Tipo\":\"A\",\n\t\"Status\":\"A\",\n\t\"AddressKey\":\"fe725a29-56a9-4daa-805b-91bb9c24775c\"\n}"
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/agendamento",
+									"raw": "{{url}}/{{version}}/scheduling",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"agendamento"
+										"scheduling"
 									]
 								}
 							},
@@ -380,16 +380,16 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"AgendamentoKey\":\"e90fe4e8-548d-4d90-8c51-0627778bcf00\",\n\t\"Data\":\"09/04/2018\",\n\t\"Hora\":\"14:00:00\",\n\t\"Tipo\":\"A\",\n\t\"Status\":\"A\",\n\t\"EnderecoKey\":\"2c5e0627-a21b-4ede-ab6b-a118276f2548\"\n}"
+									"raw": "{\n\t\"SchedulingKey\":\"e90fe4e8-548d-4d90-8c51-0627778bcf00\",\n\t\"Data\":\"09/04/2018\",\n\t\"Hora\":\"14:00:00\",\n\t\"Tipo\":\"A\",\n\t\"Status\":\"A\",\n\t\"AddressKey\":\"2c5e0627-a21b-4ede-ab6b-a118276f2548\"\n}"
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/agendamento",
+									"raw": "{{url}}/{{version}}/scheduling",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"agendamento"
+										"scheduling"
 									]
 								}
 							},
@@ -426,13 +426,13 @@
 									"raw": "{\n\t\"CidadaoKey\":\"\",\n\t\"Nome\":\"\",\n\t\"Email\":\"\",\n\t\"Cpf\":\"\",\n\t\"Senha\":\"\"\n}"
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/agendamento/200994c1-fac2-4ca3-8750-9580b2bd475b",
+									"raw": "{{url}}/{{version}}/scheduling/200994c1-fac2-4ca3-8750-9580b2bd475b",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"agendamento",
+										"scheduling",
 										"200994c1-fac2-4ca3-8750-9580b2bd475b"
 									]
 								}
@@ -458,13 +458,13 @@
 									"raw": "{\n\t\"CidadaoKey\":\"\",\n\t\"Nome\":\"\",\n\t\"Email\":\"\",\n\t\"Cpf\":\"\",\n\t\"Senha\":\"\"\n}"
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/agendamento/",
+									"raw": "{{url}}/{{version}}/scheduling/",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"agendamento",
+										"scheduling",
 										""
 									]
 								}
@@ -490,13 +490,13 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/agendamento/KEY",
+									"raw": "{{url}}/{{version}}/scheduling/KEY",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"agendamento",
+										"scheduling",
 										"KEY"
 									]
 								}
@@ -594,120 +594,13 @@
 									"raw": "{\n\t\"Cep\":\"00111-222\",\n\t\"Estado\":\"RJ\",\n\t\"Cidade\":\"Rio de Janeiro\",\n\t\"Bairro\":\"Centro\",\n\t\"Rua\":\"São Jose\",\n\t\"Numero\":{{numero}}\n}"
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/local",
+									"raw": "{{url}}/{{version}}/address",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"local"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get Address Success",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "2b7e053e-ba73-4509-983e-38c3e2f51912",
-										"type": "text/javascript",
-										"exec": [
-											"pm.test(\"GIVEN an AddressKey valid,\", function() {",
-											"    pm.expect(pm.request).to.not.be.null;",
-											"});",
-											"",
-											"pm.test(\"THEN I should have an Address\", function() {",
-											"    pm.response.to.have.status(200);",
-											"",
-											"    var response = pm.response.json();",
-											"    pm.expect(response.errors).to.be.null",
-											"    pm.expect(response.result.enderecoKey).to.equal(\"01014d23-043f-49ff-84d2-118ecdc82071\")",
-											"    pm.expect(response.result.cep).to.equal(\"00111-22\")",
-											"    pm.expect(response.result.estado).to.equal(\"RJ\")",
-											"    pm.expect(response.result.cidade).to.equal(\"Rio de Janeiro\")",
-											"    pm.expect(response.result.bairro).to.equal(\"Centro\")",
-											"    pm.expect(response.result.rua).to.equal(\"São Jose\")",
-											"    pm.expect(response.result.numero).to.equal(\"87\")",
-											"});"
-										]
-									}
-								}
-							],
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Token",
-										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f5"
-									},
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {},
-								"url": {
-									"raw": "{{url}}/{{version}}/local/01014d23-043f-49ff-84d2-118ecdc82071",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"{{version}}",
-										"local",
-										"01014d23-043f-49ff-84d2-118ecdc82071"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get Address  Fail - NotFound",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "9bf1b068-d2d4-49b7-b55a-e0e17bc3fbd8",
-										"type": "text/javascript",
-										"exec": [
-											"pm.test(\"GIVEN an AddressKey invalid,\", function() {",
-											"    pm.expect(pm.request).to.not.be.null;",
-											"});",
-											"",
-											"pm.test(\"THEN I should have an Address Not Found\", function() {",
-											"    pm.response.to.have.status(404);",
-											"",
-											"    var response = pm.response.json();",
-											"    pm.expect(response.errors[0].message).to.equal(\"Address not found\")",
-											"});"
-										]
-									}
-								}
-							],
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									},
-									{
-										"key": "Token",
-										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f5"
-									}
-								],
-								"body": {},
-								"url": {
-									"raw": "{{url}}/{{version}}/local/01014d23-043f-49ff-84d2-118ecdc82072",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"{{version}}",
-										"local",
-										"01014d23-043f-49ff-84d2-118ecdc82072"
+										"address"
 									]
 								}
 							},
@@ -764,13 +657,13 @@
 									"raw": "{\n\t\"Estado\":\"RJ\",\n\t\"Cidade\":\"Rio de Janeiro\",\n\t\"Bairro\":\"Centro\",\n\t\"Rua\":\"São Jose\",\n\t\"Numero\":{{numero}}\n}"
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/local",
+									"raw": "{{url}}/{{version}}/address",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"local"
+										"address"
 									]
 								}
 							},
@@ -827,13 +720,120 @@
 									"raw": "{\n\t\"Cep\":\"12345-123\",\n\t\"Estado\":\"RJ\",\n\t\"Cidade\":\"Rio de Janeiro\",\n\t\"Bairro\":\"Centro\",\n\t\"Rua\":\"São Jose\",\n\t\"Numero\":{{numero}}\n}"
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/local",
+									"raw": "{{url}}/{{version}}/address",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"local"
+										"address"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Address Success",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "614d8a7a-a4e1-433e-8532-d8b839f9710d",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"GIVEN an AddressKey valid,\", function() {",
+											"    pm.expect(pm.request).to.not.be.null;",
+											"});",
+											"",
+											"pm.test(\"THEN I should have an Address\", function() {",
+											"    pm.response.to.have.status(200);",
+											"",
+											"    var response = pm.response.json();",
+											"    pm.expect(response.errors).to.be.null",
+											"    pm.expect(response.result.addressKey).to.equal(\"01014d23-043f-49ff-84d2-118ecdc82071\")",
+											"    pm.expect(response.result.cep).to.equal(\"00111-22\")",
+											"    pm.expect(response.result.estado).to.equal(\"RJ\")",
+											"    pm.expect(response.result.cidade).to.equal(\"Rio de Janeiro\")",
+											"    pm.expect(response.result.bairro).to.equal(\"Centro\")",
+											"    pm.expect(response.result.rua).to.equal(\"São Jose\")",
+											"    pm.expect(response.result.numero).to.equal(\"87\")",
+											"});"
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Token",
+										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f5"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "{{url}}/{{version}}/address/01014d23-043f-49ff-84d2-118ecdc82071",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{version}}",
+										"address",
+										"01014d23-043f-49ff-84d2-118ecdc82071"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Address  Fail - NotFound",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "9bf1b068-d2d4-49b7-b55a-e0e17bc3fbd8",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"GIVEN an AddressKey invalid,\", function() {",
+											"    pm.expect(pm.request).to.not.be.null;",
+											"});",
+											"",
+											"pm.test(\"THEN I should have an Address Not Found\", function() {",
+											"    pm.response.to.have.status(404);",
+											"",
+											"    var response = pm.response.json();",
+											"    pm.expect(response.errors[0].message).to.equal(\"Address not found\")",
+											"});"
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Token",
+										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f5"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "{{url}}/{{version}}/address/01014d23-043f-49ff-84d2-118ecdc82072",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{version}}",
+										"address",
+										"01014d23-043f-49ff-84d2-118ecdc82072"
 									]
 								}
 							},
@@ -876,13 +876,13 @@
 								],
 								"body": {},
 								"url": {
-									"raw": "{{url}}/{{version}}/local/01014d23-043f-49ff-84d2-118ecdc82071",
+									"raw": "{{url}}/{{version}}/address/01014d23-043f-49ff-84d2-118ecdc82071",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"local",
+										"address",
 										"01014d23-043f-49ff-84d2-118ecdc82071"
 									]
 								}
@@ -927,13 +927,13 @@
 								],
 								"body": {},
 								"url": {
-									"raw": "{{url}}/{{version}}/local/",
+									"raw": "{{url}}/{{version}}/address/",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"local",
+										"address",
 										""
 									]
 								}
@@ -977,13 +977,13 @@
 								],
 								"body": {},
 								"url": {
-									"raw": "{{url}}/{{version}}/local/",
+									"raw": "{{url}}/{{version}}/address/",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"local",
+										"address",
 										""
 									]
 								}
@@ -994,209 +994,546 @@
 					"_postman_isSubFolder": true
 				},
 				{
-					"name": "Citezen Scenarios",
+					"name": "Scheduling Scenarios",
 					"item": [
 						{
-							"name": "Insert Citezen Fail - BadRequest",
+							"name": "Insert Scheduling Success",
 							"event": [
 								{
 									"listen": "test",
 									"script": {
-										"id": "e5ba6f4a-a4dd-4c87-821e-6e67bf2e9fcc",
+										"id": "2c88424a-ccd1-483e-8496-c51b07094a0b",
 										"type": "text/javascript",
 										"exec": [
-											"pm.test(\"GIVEN a Citezen without cpf,\", function() {",
+											"pm.test(\"GIVEN an Scheduling valid,\", function() {",
 											"    pm.expect(pm.request).to.not.be.null;",
 											"});",
 											"",
-											"pm.test(\"THEN I should have a BadRequest\", function() {",
-											"    pm.response.to.have.status(400);",
-											"",
-											"    var response = pm.response.json();",
-											"    pm.expect(response.errors[0].message).to.equal(\"Email obrigatório\")",
-											"});"
-										]
-									}
-								},
-								{
-									"listen": "prerequest",
-									"script": {
-										"id": "8acb23f6-cd85-4658-aa7d-46a7a27f9e1e",
-										"type": "text/javascript",
-										"exec": [
-											"function generateName(size){",
-											"    var text = \"\";",
-											"    var possible = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\";",
-											"    for (var i = 0; i < size; i++)",
-											"    text += possible.charAt(Math.floor(Math.random() * possible.length));",
-											"    return text;",
-											"}",
-											"",
-											"pm.environment.set(\"cpf\", String(Math.floor(Math.random() * 99999999999) + 10000000000))",
-											"var mail =  generateName(8) + \"@\" + generateName(3) + \".com\";",
-											"//pm.environment.set(\"mail\",  mail)",
-											"pm.environment.set(\"name\",  generateName(5))"
-										]
-									}
-								}
-							],
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n\t\"Nome\":\"SJ90 {{name}}\",\n\t\"Email\":{{mail}},\n\t\"Cpf\":\"{{cpf}}\",\n\t\"Senha\":\"123mudar\"\n}"
-								},
-								"url": {
-									"raw": "{{url}}/{{version}}/cidadao",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"{{version}}",
-										"cidadao"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Insert Citezen Fail - Forbidden",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "3f39ef48-7c2b-49f5-a896-dbbe7c042b4a",
-										"type": "text/javascript",
-										"exec": [
-											"pm.test(\"GIVEN an existing Citezen,\", function() {",
-											"    pm.expect(pm.request).to.not.be.null;",
-											"});",
-											"",
-											"pm.test(\"THEN I should have a Forbidden response,\", function() {",
-											"    pm.response.to.have.status(403);",
-											"",
-											"    var response = pm.response.json();",
-											"    var request = JSON.parse(pm.request.body);",
-											"    pm.expect(response.errors[0].message).to.equal(\"Cidadao already exists\")",
-											"});"
-										]
-									}
-								},
-								{
-									"listen": "prerequest",
-									"script": {
-										"id": "3fbbdbd5-88a4-4256-be85-ae713bdaa915",
-										"type": "text/javascript",
-										"exec": [
-											"pm.environment.set(\"numero\", Math.floor(Math.random() * 99999) + 1)"
-										]
-									}
-								}
-							],
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n\t\"Nome\":\"Yuri\",\n\t\"Email\":\"yuri@sj90.com.br\",\n\t\"Cpf\":\"12345678992\",\n\t\"Senha\":\"123mudar\"\n}"
-								},
-								"url": {
-									"raw": "{{url}}/{{version}}/cidadao",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"{{version}}",
-										"cidadao"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get Citizen Success",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "68b76ce0-21e2-4849-863f-863a6e4fe5b6",
-										"type": "text/javascript",
-										"exec": [
-											"pm.test(\"GIVEN a CitizenKey valid,\", function() {",
-											"    pm.expect(pm.request).to.not.be.null;",
-											"});",
-											"",
-											"pm.test(\"THEN I should have a Citizen\", function() {",
+											"pm.test(\"THEN I should have an Scheduling inserted with successful,\", function() {",
 											"    pm.response.to.have.status(200);",
 											"",
 											"    var response = pm.response.json();",
+											"    var request = JSON.parse(pm.request.body);",
 											"    pm.expect(response.errors).to.be.null",
-											"    pm.expect(response.result.cidadaoKey).to.equal(\"2eefac75-acab-4f41-96e3-0aa4f5b8ff86\")",
-											"    pm.expect(response.result.nome).to.equal(\"Yuri Pereira de Souza\")",
-											"    pm.expect(response.result.email).to.equal(\"yuripsouza@sj90.com.br\")",
-											"    pm.expect(response.result.cpf).to.equal(\"12345678992\")",
-											"    pm.expect(response.result.senha).to.equal(\"123mudar\")",
-											"});"
+											"    pm.expect(response.result.schedulingKey).to.not.be.null",
+											"    pm.expect(request.Data).to.equal(response.result.data)",
+											"    pm.expect(request.Hora).to.equal(response.result.hora)",
+											"    pm.expect(request.Tipo).to.equal(response.result.tipo)",
+											"    pm.expect(request.Status).to.equal(response.result.status)",
+											"    ",
+											"    var responseAddress = pm.environment.get(\"address_response\")",
+											"    pm.expect(responseAddress.errors).to.be.null",
+											"    pm.expect(responseAddress.result.addressKey).to.equal(response.result.address.addressKey)",
+											"    pm.expect(responseAddress.result.cep).to.equal(response.result.address.cep)",
+											"    pm.expect(responseAddress.result.estado).to.equal(response.result.address.estado)",
+											"    pm.expect(responseAddress.result.cidade).to.equal(response.result.address.cidade)",
+											"    pm.expect(responseAddress.result.bairro).to.equal(response.result.address.bairro)",
+											"    pm.expect(responseAddress.result.rua).to.equal(response.result.address.rua)",
+											"    pm.expect(responseAddress.result.numero).to.equal(response.result.address.numero)",
+											"});",
+											"",
+											"",
+											"",
+											"",
+											""
+										]
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "3e19c800-033e-46dc-8085-c22c734c06a6",
+										"type": "text/javascript",
+										"exec": [
+											"function GenerateNumber(min, max){",
+											"    return Math.floor(Math.random() * max) + min;",
+											"}",
+											"",
+											"function PadLeft(len, c){",
+											"    c = String(c)",
+											"    while(c.length< len) c= \"0\" + c;",
+											"    return c;",
+											"}",
+											"",
+											"var dateNow = new Date();",
+											"pm.environment.set(\"year\", dateNow.getFullYear() + 1);",
+											"pm.environment.set(\"month\", PadLeft(2, GenerateNumber(1, 12)));",
+											"pm.environment.set(\"day\", PadLeft(2, GenerateNumber(1, 27)));",
+											"pm.environment.set(\"hour\", PadLeft(2, GenerateNumber(0, 23)));",
+											"",
+											"var _url = pm.environment.get(\"url\") + '/' + pm.environment.get(\"version\") + '/address/' + pm.environment.get(\"addressKey\");",
+											"",
+											"const requestScheduling = {",
+											"    url: _url,",
+											"    method: 'GET',",
+											"    header: ['Content-Type:application/json',",
+											"        'Accept:application/json',",
+											"        'Token: 50ccb0d5-2556-47b9-b563-3095dedbf4f5'",
+											"    ]",
+											"};",
+											"",
+											"pm.sendRequest(requestScheduling, function(err, response) {",
+											"    const addressResponse = response.json();",
+											"    pm.environment.set(\"address_response\", addressResponse);",
+											"});",
+											""
 										]
 									}
 								}
 							],
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [
-									{
-										"key": "Token",
-										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f5"
-									},
 									{
 										"key": "Content-Type",
 										"value": "application/json"
+									},
+									{
+										"key": "Token",
+										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f5"
 									}
 								],
-								"body": {},
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"Data\":\"{{day}}/{{month}}/{{year}}\",\n\t\"Hora\":\"{{hour}}:00\",\n\t\"Tipo\":\"A\",\n\t\"Status\":\"A\",\n\t\"AddressKey\":\"{{addressKey}}\"\n}"
+								},
 								"url": {
-									"raw": "{{url}}/{{version}}/cidadao/2eefac75-acab-4f41-96e3-0aa4f5b8ff86",
+									"raw": "{{url}}/{{version}}/scheduling",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"cidadao",
-										"2eefac75-acab-4f41-96e3-0aa4f5b8ff86"
+										"scheduling"
 									]
 								}
 							},
 							"response": []
 						},
 						{
-							"name": "Get Citizen Fail - NotFound",
+							"name": "Insert Scheduling Fail - Address Not Found",
 							"event": [
 								{
 									"listen": "test",
 									"script": {
-										"id": "5601ed32-f9b8-4ffd-9649-46059f0aa373",
+										"id": "eebefe09-79fd-4a0f-bb95-4094d99f5d5f",
 										"type": "text/javascript",
 										"exec": [
-											"pm.test(\"GIVEN a CitezenKey invalid,\", function() {",
+											"pm.test(\"GIVEN a Scheduling valid but an Address invalid,\", function() {",
 											"    pm.expect(pm.request).to.not.be.null;",
 											"});",
 											"",
-											"pm.test(\"THEN I should have a Citizen Not Found\", function() {",
+											"pm.test(\"THEN I should have a NotFound response\", function() {",
 											"    pm.response.to.have.status(404);",
 											"",
 											"    var response = pm.response.json();",
-											"    pm.expect(response.errors[0].message).to.equal(\"Citizen not found\")",
+											"    pm.expect(response.errors[0].message).to.equal(\"Not was possible insert the Scheduling: Address not found\");",
+											"});"
+										]
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "b25aae16-8652-4cfe-9b06-ecdf95ba5226",
+										"type": "text/javascript",
+										"exec": [
+											"function GenerateNumber(min, max){",
+											"    return Math.floor(Math.random() * max) + min;",
+											"}",
+											"",
+											"function PadLeft(len, c){",
+											"    c = String(c)",
+											"    while(c.length< len) c= \"0\" + c;",
+											"    return c;",
+											"}",
+											"",
+											"var dateNow = new Date();",
+											"pm.environment.set(\"year\", dateNow.getFullYear() + 1);",
+											"pm.environment.set(\"month\", PadLeft(2, GenerateNumber(1, 12)));",
+											"pm.environment.set(\"day\", PadLeft(2, GenerateNumber(1, 27)));",
+											"pm.environment.set(\"hour\", PadLeft(2, GenerateNumber(0, 23)));"
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Token",
+										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f5"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"Data\":\"{{day}}/{{month}}/{{year}}\",\n\t\"Hora\":\"{{hour}}:00\",\n\t\"Tipo\":\"A\",\n\t\"Status\":\"A\",\n\t\"AddressKey\":\"fe725a29-56a9-4daa-805b-91bb9c247758\"\n}"
+								},
+								"url": {
+									"raw": "{{url}}/{{version}}/scheduling",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{version}}",
+										"scheduling"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Insert Scheduling Fail - BadRequest Hour Invalid",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "3c67ed49-89a1-4765-8fc9-eaa1dd554803",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"GIVEN an Scheduling with hour invalid,\", function() {",
+											"    pm.expect(pm.request).to.not.be.null;",
+											"});",
+											"",
+											"pm.test(\"THEN I should have a BadReques Response\", function() {",
+											"    pm.response.to.have.status(400);",
+											"",
+											"    var response = pm.response.json();",
+											"    pm.expect(response.errors[0].message).to.equal(\"A Hora deve ser superior a atual\");",
+											"});"
+										]
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "7001b180-77f2-43d9-a0d0-bfb21a2a4ebb",
+										"type": "text/javascript",
+										"exec": [
+											"function PadLeft(len, c){",
+											"    c = String(c)",
+											"    while(c.length< len) c= \"0\" + c;",
+											"    return c;",
+											"}",
+											"",
+											"var dateNow = new Date();",
+											"pm.environment.set(\"year\", dateNow.getFullYear());",
+											"pm.environment.set(\"month\", PadLeft(2, dateNow.getMonth() + 1));",
+											"pm.environment.set(\"day\", PadLeft(2, dateNow.getDate()));",
+											"pm.environment.set(\"hour\", PadLeft(2, dateNow.getHours() - 1));"
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Token",
+										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f5"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"Data\":\"{{day}}/{{month}}/{{year}}\",\n\t\"Hora\":\"{{hour}}:00\",\n\t\"Tipo\":\"A\",\n\t\"Status\":\"A\",\n\t\"AddressKey\":\"fe725a29-56a9-4daa-805b-91bb9c247758\"\n}"
+								},
+								"url": {
+									"raw": "{{url}}/{{version}}/scheduling",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{version}}",
+										"scheduling"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Insert Scheduling Fail - BadRequest Date Invalid",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "a8f67580-553c-42bb-9aaa-ea644b1b7ab1",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"GIVEN an Scheduling with Date invalid,\", function() {",
+											"    pm.expect(pm.request).to.not.be.null;",
+											"});",
+											"",
+											"pm.test(\"THEN I should have a BadRequest response,\", function() {",
+											"    pm.response.to.have.status(400);",
+											"",
+											"    var response = pm.response.json();",
+											"    pm.expect(response.errors[0].message).to.equal(\"A Data deve ser superior a atual\");",
+											"});"
+										]
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "fe624b0c-8956-47da-b623-3881b7818997",
+										"type": "text/javascript",
+										"exec": [
+											"function PadLeft(len, c){",
+											"    c = String(c)",
+											"    while(c.length< len) c= \"0\" + c;",
+											"    return c;",
+											"}",
+											"",
+											"var dateNow = new Date();",
+											"pm.environment.set(\"year\", dateNow.getFullYear());",
+											"pm.environment.set(\"month\", PadLeft(2, dateNow.getMonth() - 1));",
+											"pm.environment.set(\"day\", PadLeft(2, dateNow.getDate()));",
+											"pm.environment.set(\"hour\", PadLeft(2, dateNow.getHours()));"
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Token",
+										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f5"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"Data\":\"{{day}}/{{month}}/{{year}}\",\n\t\"Hora\":\"{{hour}}:00\",\n\t\"Tipo\":\"A\",\n\t\"Status\":\"A\",\n\t\"AddressKey\":\"fe725a29-56a9-4daa-805b-91bb9c247758\"\n}"
+								},
+								"url": {
+									"raw": "{{url}}/{{version}}/scheduling",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{version}}",
+										"scheduling"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Insert Address Fail - NotAuthenticate",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "45c7e03f-b372-4dda-9edc-56f9ae096296",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"GIVEN an Address with citizen not authenticate,\", function() {",
+											"    pm.expect(pm.request).to.not.be.null;",
+											"});",
+											"",
+											"pm.test(\"THEN I should have an Unauthorized response,\", function() {",
+											"    pm.response.to.have.status(401);",
+											"",
+											"    var response = pm.response.json();",
+											"    var request = JSON.parse(pm.request.body);",
+											"    pm.expect(response.errors[0].message).to.equal(\"Citezen not authenticated\")",
+											"});"
+										]
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "1cc3c59c-2239-484d-87b3-84eee65c8562",
+										"type": "text/javascript",
+										"exec": [
+											"function GenerateNumber(min, max){",
+											"    return Math.floor(Math.random() * max) + min;",
+											"}",
+											"",
+											"function PadLeft(len, c){",
+											"    c = String(c)",
+											"    while(c.length< len) c= \"0\" + c;",
+											"    return c;",
+											"}",
+											"",
+											"var dateNow = new Date();",
+											"pm.environment.set(\"year\", dateNow.getFullYear() + 1);",
+											"pm.environment.set(\"month\", PadLeft(2, GenerateNumber(1, 12)));",
+											"pm.environment.set(\"day\", PadLeft(2, GenerateNumber(1, 27)));",
+											"pm.environment.set(\"hour\", PadLeft(2, GenerateNumber(0, 23)));",
+											"",
+											"var _url = pm.environment.get(\"url\") + '/' + pm.environment.get(\"version\") + '/local/' + pm.environment.get(\"enderecoKey\");",
+											"",
+											"const requestScheduling = {",
+											"    url: _url,",
+											"    method: 'GET',",
+											"    header: ['Content-Type:application/json',",
+											"        'Accept:application/json',",
+											"        'Token: 50ccb0d5-2556-47b9-b563-3095dedbf4f5'",
+											"    ]",
+											"};",
+											"",
+											"pm.sendRequest(requestScheduling, function(err, response) {",
+											"    const addressResponse = response.json();",
+											"    console.log(response);",
+											"    console.log(addressResponse);",
+											"    pm.environment.set(\"address_response\", addressResponse);",
+											"});",
+											""
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Token",
+										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f7"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"Data\":\"{{day}}/{{month}}/{{year}}\",\n\t\"Hora\":\"{{hour}}:00\",\n\t\"Tipo\":\"A\",\n\t\"Status\":\"A\",\n\t\"AddressKey\":\"{{addressKey}}\"\n}"
+								},
+								"url": {
+									"raw": "{{url}}/{{version}}/scheduling",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{version}}",
+										"scheduling"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Scheduling Success",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b0f5e6df-224a-482f-919b-b6977ff43a25",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"GIVEN an Scheduling valid,\", function() {",
+											"    pm.expect(pm.request).to.not.be.null;",
+											"});",
+											"",
+											"pm.test(\"THEN I should have an Scheduling\", function() {",
+											"    pm.response.to.have.status(200);",
+											"",
+											"    var response = pm.response.json();",
+											"    pm.expect(response.errors).to.be.null",
+											"    pm.expect(response.result.schedulingKey).to.equal(\"200994c1-fac2-4ca3-8750-9580b2bd475b\")",
+											"    pm.expect(response.result.data).to.equal(\"04/05/2018\")",
+											"    pm.expect(response.result.hora).to.equal(\"14:00\")",
+											"    pm.expect(response.result.tipo).to.equal(\"A\")",
+											"    pm.expect(response.result.status).to.equal(\"A\")",
+											"    ",
+											"    var responseAddress = pm.environment.get(\"address_response\")",
+											"    pm.expect(responseAddress.errors).to.be.null",
+											"    pm.expect(responseAddress.result.addressKey).to.equal(response.result.address.addressKey)",
+											"    pm.expect(responseAddress.result.cep).to.equal(response.result.address.cep)",
+											"    pm.expect(responseAddress.result.estado).to.equal(response.result.address.estado)",
+											"    pm.expect(responseAddress.result.cidade).to.equal(response.result.address.cidade)",
+											"    pm.expect(responseAddress.result.bairro).to.equal(response.result.address.bairro)",
+											"    pm.expect(responseAddress.result.rua).to.equal(response.result.address.rua)",
+											"    pm.expect(responseAddress.result.numero).to.equal(response.result.address.numero)",
+											"});"
+										]
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "71300896-c82e-4f83-9fa4-88aeb93d7d8d",
+										"type": "text/javascript",
+										"exec": [
+											"var _url = pm.environment.get(\"url\") + '/' + pm.environment.get(\"version\") + '/address/' + pm.environment.get(\"addressKey\");",
+											"",
+											"const requestScheduling = {",
+											"    url: _url,",
+											"    method: 'GET',",
+											"    header: ['Content-Type:application/json',",
+											"        'Accept:application/json',",
+											"        'Token: 50ccb0d5-2556-47b9-b563-3095dedbf4f5'",
+											"    ]",
+											"};",
+											"",
+											"pm.sendRequest(requestScheduling, function(err, response) {",
+											"    const addressResponse = response.json();",
+											"    pm.environment.set(\"address_response\", addressResponse);",
+											"});",
+											""
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Token",
+										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f5"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "{{url}}/{{version}}/scheduling/200994c1-fac2-4ca3-8750-9580b2bd475b",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{version}}",
+										"scheduling",
+										"200994c1-fac2-4ca3-8750-9580b2bd475b"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Scheduling  Fail - NotFound",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "8fa50691-fecd-43b6-b974-cdef470f4442",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"GIVEN an SchedulingKey invalid,\", function() {",
+											"    pm.expect(pm.request).to.not.be.null;",
+											"});",
+											"",
+											"pm.test(\"THEN I should have an Scheduling Not Found\", function() {",
+											"    pm.response.to.have.status(404);",
+											"",
+											"    var response = pm.response.json();",
+											"    pm.expect(response.errors[0].message).to.equal(\"Scheduling not found\")",
 											"});"
 										]
 									}
@@ -1216,71 +1553,44 @@
 								],
 								"body": {},
 								"url": {
-									"raw": "{{url}}/{{version}}/cidadao/2eefac75-acab-4f41-96e3-0aa4f5b8ff87",
+									"raw": "{{url}}/{{version}}/scheduling/200994c1-fac2-4ca3-8750-9580b2bd4757",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"cidadao",
-										"2eefac75-acab-4f41-96e3-0aa4f5b8ff87"
+										"scheduling",
+										"200994c1-fac2-4ca3-8750-9580b2bd4757"
 									]
 								}
 							},
 							"response": []
 						},
 						{
-							"name": "Insert Citezen Success",
+							"name": "Get Scheduling  Fail - NotAuthenticate",
 							"event": [
 								{
 									"listen": "test",
 									"script": {
-										"id": "f026c917-4f33-492a-9e52-0b062d126c2c",
+										"id": "f94b8fc7-62a9-4c81-88c1-1ecd565da0e3",
 										"type": "text/javascript",
 										"exec": [
-											"pm.test(\"GIVEN a Citezen valid,\", function() {",
+											"pm.test(\"GIVEN an SchedulingKey valid with citezen not authenticate,\", function() {",
 											"    pm.expect(pm.request).to.not.be.null;",
 											"});",
 											"",
-											"pm.test(\"THEN I should have a Citezen inserted with successful,\", function() {",
-											"    pm.response.to.have.status(200);",
+											"pm.test(\"THEN I should have an Unauthorized response\", function() {",
+											"    pm.response.to.have.status(401);",
 											"",
 											"    var response = pm.response.json();",
-											"    var request = JSON.parse(pm.request.body);",
-											"    pm.expect(response.errors).to.be.null",
-											"    pm.expect(response.result.citezenKey).to.not.be.null",
-											"    pm.expect(request.Nome).to.equal(response.result.nome)",
-											"    pm.expect(request.Email).to.equal(response.result.email)",
-											"    pm.expect(request.Cpf).to.equal(response.result.cpf)",
-											"    pm.expect(request.Senha).to.equal(response.result.senha)",
+											"    pm.expect(response.errors[0].message).to.equal(\"Citezen not authenticated\")",
 											"});"
-										]
-									}
-								},
-								{
-									"listen": "prerequest",
-									"script": {
-										"id": "b2c420e6-fc68-46bf-8110-e4c87f4883ee",
-										"type": "text/javascript",
-										"exec": [
-											"function generateName(size){",
-											"    var text = \"\";",
-											"    var possible = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\";",
-											"    for (var i = 0; i < size; i++)",
-											"    text += possible.charAt(Math.floor(Math.random() * possible.length));",
-											"    return text;",
-											"}",
-											"",
-											"pm.environment.set(\"cpf\", String(Math.floor(Math.random() * 99999999999) + 10000000000))",
-											"var mail =  generateName(8) + \"@\" + generateName(3) + \".com\";",
-											"pm.environment.set(\"mail\",  mail)",
-											"pm.environment.set(\"name\",  generateName(5))"
 										]
 									}
 								}
 							],
 							"request": {
-								"method": "POST",
+								"method": "GET",
 								"header": [
 									{
 										"key": "Content-Type",
@@ -1288,21 +1598,120 @@
 									},
 									{
 										"key": "Token",
-										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f5"
+										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f4"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n\t\"Nome\":\"SJ90 {{name}}\",\n\t\"Email\":\"{{mail}}\",\n\t\"Cpf\":\"{{cpf}}\",\n\t\"Senha\":\"123mudar\"\n}"
-								},
+								"body": {},
 								"url": {
-									"raw": "{{url}}/{{version}}/cidadao",
+									"raw": "{{url}}/{{version}}/scheduling/200994c1-fac2-4ca3-8750-9580b2bd475b",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"cidadao"
+										"scheduling",
+										"200994c1-fac2-4ca3-8750-9580b2bd475b"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAll Schedules Success",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "db419009-9437-44d8-a7ee-7e010dc69c93",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"GIVEN a SchedulingKey valid and authenticated,\", function() {",
+											"    pm.expect(pm.request).to.not.be.null;",
+											"});",
+											"",
+											"pm.test(\"THEN I should have a Scheduling Collection\", function() {",
+											"    pm.response.to.have.status(200);",
+											"",
+											"    var response = pm.response.json();",
+											"    pm.expect(response.errors).to.be.null",
+											"    pm.expect(response.result.length).to.be.above(1)",
+											"});"
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Token",
+										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f5"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "{{url}}/{{version}}/scheduling/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{version}}",
+										"scheduling",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAll Schedules Fail - NotAuthenticate",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "010e72e7-9b06-49bf-8444-4cf1db1e130a",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"GIVEN an CitezenKey not authenticate,\", function() {",
+											"    pm.expect(pm.request).to.not.be.null;",
+											"});",
+											"",
+											"pm.test(\"THEN I should have an Unauthorized response\", function() {",
+											"    pm.response.to.have.status(401);",
+											"",
+											"    var response = pm.response.json();",
+											"    pm.expect(response.errors[0].message).to.equal(\"Citezen not authenticated\")",
+											"});"
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Token",
+										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f8"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "{{url}}/{{version}}/scheduling/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{version}}",
+										"scheduling",
+										""
 									]
 								}
 							},
@@ -1313,7 +1722,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "92be5e61-ae35-4800-92dd-b80643fa23b3",
+								"id": "c5c9419a-d33b-44e5-9bab-09c6eb64a723",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1323,7 +1732,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "82b6d6b7-dc73-4001-a242-d86e9e3b0ebb",
+								"id": "a5e63f40-8adb-4b41-a198-bbbc087143c1",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1488,142 +1897,32 @@
 					"_postman_isSubFolder": true
 				},
 				{
-					"name": "Scheduling Scenarios",
+					"name": "Citezen Scenarios",
 					"item": [
 						{
-							"name": "Insert Scheduling Success",
+							"name": "Insert Citezen Success",
 							"event": [
 								{
 									"listen": "test",
 									"script": {
-										"id": "6838837c-14d2-4ed7-b424-228bccff7dde",
+										"id": "f026c917-4f33-492a-9e52-0b062d126c2c",
 										"type": "text/javascript",
 										"exec": [
-											"pm.test(\"GIVEN an Scheduling valid,\", function() {",
+											"pm.test(\"GIVEN a Citezen valid,\", function() {",
 											"    pm.expect(pm.request).to.not.be.null;",
 											"});",
 											"",
-											"pm.test(\"THEN I should have an Scheduling inserted with successful,\", function() {",
+											"pm.test(\"THEN I should have a Citezen inserted with successful,\", function() {",
 											"    pm.response.to.have.status(200);",
 											"",
 											"    var response = pm.response.json();",
 											"    var request = JSON.parse(pm.request.body);",
 											"    pm.expect(response.errors).to.be.null",
-											"    pm.expect(response.result.agendamentoKey).to.not.be.null",
-											"    pm.expect(request.Data).to.equal(response.result.data)",
-											"    pm.expect(request.Hora).to.equal(response.result.hora)",
-											"    pm.expect(request.Tipo).to.equal(response.result.tipo)",
-											"    pm.expect(request.Status).to.equal(response.result.status)",
-											"    ",
-											"    var responseAddress = pm.environment.get(\"address_response\")",
-											"    pm.expect(responseAddress.errors).to.be.null",
-											"    pm.expect(responseAddress.result.enderecoKey).to.equal(response.result.endereco.enderecoKey)",
-											"    pm.expect(responseAddress.result.cep).to.equal(response.result.endereco.cep)",
-											"    pm.expect(responseAddress.result.estado).to.equal(response.result.endereco.estado)",
-											"    pm.expect(responseAddress.result.cidade).to.equal(response.result.endereco.cidade)",
-											"    pm.expect(responseAddress.result.bairro).to.equal(response.result.endereco.bairro)",
-											"    pm.expect(responseAddress.result.rua).to.equal(response.result.endereco.rua)",
-											"    pm.expect(responseAddress.result.numero).to.equal(response.result.endereco.numero)",
-											"});",
-											"",
-											"",
-											"",
-											"",
-											""
-										]
-									}
-								},
-								{
-									"listen": "prerequest",
-									"script": {
-										"id": "d02b63f7-e4b5-4fb5-a9a1-ee3985c0f61e",
-										"type": "text/javascript",
-										"exec": [
-											"function GenerateNumber(min, max){",
-											"    return Math.floor(Math.random() * max) + min;",
-											"}",
-											"",
-											"function PadLeft(len, c){",
-											"    c = String(c)",
-											"    while(c.length< len) c= \"0\" + c;",
-											"    return c;",
-											"}",
-											"",
-											"var dateNow = new Date();",
-											"pm.environment.set(\"year\", dateNow.getFullYear() + 1);",
-											"pm.environment.set(\"month\", PadLeft(2, GenerateNumber(1, 12)));",
-											"pm.environment.set(\"day\", PadLeft(2, GenerateNumber(1, 27)));",
-											"pm.environment.set(\"hour\", PadLeft(2, GenerateNumber(0, 23)));",
-											"",
-											"var _url = pm.environment.get(\"url\") + '/' + pm.environment.get(\"version\") + '/local/' + pm.environment.get(\"enderecoKey\");",
-											"",
-											"const requestScheduling = {",
-											"    url: _url,",
-											"    method: 'GET',",
-											"    header: ['Content-Type:application/json',",
-											"        'Accept:application/json',",
-											"        'Token: 50ccb0d5-2556-47b9-b563-3095dedbf4f5'",
-											"    ]",
-											"};",
-											"",
-											"pm.sendRequest(requestScheduling, function(err, response) {",
-											"    const addressResponse = response.json();",
-											"    console.log(response);",
-											"    console.log(addressResponse);",
-											"    pm.environment.set(\"address_response\", addressResponse);",
-											"});",
-											""
-										]
-									}
-								}
-							],
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									},
-									{
-										"key": "Token",
-										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f5"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n\t\"Data\":\"{{day}}/{{month}}/{{year}}\",\n\t\"Hora\":\"{{hour}}:00\",\n\t\"Tipo\":\"A\",\n\t\"Status\":\"A\",\n\t\"EnderecoKey\":\"{{enderecoKey}}\"\n}"
-								},
-								"url": {
-									"raw": "{{url}}/{{version}}/agendamento",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"{{version}}",
-										"agendamento"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Insert Scheduling Fail - BadRequest Hour Invalid",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "3c67ed49-89a1-4765-8fc9-eaa1dd554803",
-										"type": "text/javascript",
-										"exec": [
-											"pm.test(\"GIVEN an Scheduling with hour invalid,\", function() {",
-											"    pm.expect(pm.request).to.not.be.null;",
-											"});",
-											"",
-											"pm.test(\"THEN I should have a BadReques Response\", function() {",
-											"    pm.response.to.have.status(400);",
-											"",
-											"    var response = pm.response.json();",
-											"    pm.expect(response.errors[0].message).to.equal(\"A Hora deve ser superior a atual\");",
+											"    pm.expect(response.result.citezenKey).to.not.be.null",
+											"    pm.expect(request.Nome).to.equal(response.result.nome)",
+											"    pm.expect(request.Email).to.equal(response.result.email)",
+											"    pm.expect(request.Cpf).to.equal(response.result.cpf)",
+											"    pm.expect(request.Senha).to.equal(response.result.senha)",
 											"});"
 										]
 									}
@@ -1631,20 +1930,21 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "7001b180-77f2-43d9-a0d0-bfb21a2a4ebb",
+										"id": "b2c420e6-fc68-46bf-8110-e4c87f4883ee",
 										"type": "text/javascript",
 										"exec": [
-											"function PadLeft(len, c){",
-											"    c = String(c)",
-											"    while(c.length< len) c= \"0\" + c;",
-											"    return c;",
+											"function generateName(size){",
+											"    var text = \"\";",
+											"    var possible = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\";",
+											"    for (var i = 0; i < size; i++)",
+											"    text += possible.charAt(Math.floor(Math.random() * possible.length));",
+											"    return text;",
 											"}",
 											"",
-											"var dateNow = new Date();",
-											"pm.environment.set(\"year\", dateNow.getFullYear());",
-											"pm.environment.set(\"month\", PadLeft(2, dateNow.getMonth() + 1));",
-											"pm.environment.set(\"day\", PadLeft(2, dateNow.getDate()));",
-											"pm.environment.set(\"hour\", PadLeft(2, dateNow.getHours() - 1));"
+											"pm.environment.set(\"cpf\", String(Math.floor(Math.random() * 99999999999) + 10000000000))",
+											"var mail =  generateName(8) + \"@\" + generateName(3) + \".com\";",
+											"pm.environment.set(\"mail\",  mail)",
+											"pm.environment.set(\"name\",  generateName(5))"
 										]
 									}
 								}
@@ -1663,40 +1963,109 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"Data\":\"{{day}}/{{month}}/{{year}}\",\n\t\"Hora\":\"{{hour}}:00\",\n\t\"Tipo\":\"A\",\n\t\"Status\":\"A\",\n\t\"EnderecoKey\":\"fe725a29-56a9-4daa-805b-91bb9c247758\"\n}"
+									"raw": "{\n\t\"Nome\":\"SJ90 {{name}}\",\n\t\"Email\":\"{{mail}}\",\n\t\"Cpf\":\"{{cpf}}\",\n\t\"Senha\":\"123mudar\"\n}"
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/agendamento",
+									"raw": "{{url}}/{{version}}/citezen",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"agendamento"
+										"citezen"
 									]
 								}
 							},
 							"response": []
 						},
 						{
-							"name": "Insert Address Fail - NotAuthenticate",
+							"name": "Insert Citezen Fail - BadRequest",
 							"event": [
 								{
 									"listen": "test",
 									"script": {
-										"id": "45c7e03f-b372-4dda-9edc-56f9ae096296",
+										"id": "e5ba6f4a-a4dd-4c87-821e-6e67bf2e9fcc",
 										"type": "text/javascript",
 										"exec": [
-											"pm.test(\"GIVEN an Address with citizen not authenticate,\", function() {",
+											"pm.test(\"GIVEN a Citezen without cpf,\", function() {",
 											"    pm.expect(pm.request).to.not.be.null;",
 											"});",
 											"",
-											"pm.test(\"THEN I should have an Unauthorized response,\", function() {",
-											"    pm.response.to.have.status(401);",
+											"pm.test(\"THEN I should have a BadRequest\", function() {",
+											"    pm.response.to.have.status(400);",
+											"",
+											"    var response = pm.response.json();",
+											"    pm.expect(response.errors[0].message).to.equal(\"Email obrigatório\")",
+											"});"
+										]
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "8acb23f6-cd85-4658-aa7d-46a7a27f9e1e",
+										"type": "text/javascript",
+										"exec": [
+											"function generateName(size){",
+											"    var text = \"\";",
+											"    var possible = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\";",
+											"    for (var i = 0; i < size; i++)",
+											"    text += possible.charAt(Math.floor(Math.random() * possible.length));",
+											"    return text;",
+											"}",
+											"",
+											"pm.environment.set(\"cpf\", String(Math.floor(Math.random() * 99999999999) + 10000000000))",
+											"var mail =  generateName(8) + \"@\" + generateName(3) + \".com\";",
+											"//pm.environment.set(\"mail\",  mail)",
+											"pm.environment.set(\"name\",  generateName(5))"
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"Nome\":\"SJ90 {{name}}\",\n\t\"Email\":{{mail}},\n\t\"Cpf\":\"{{cpf}}\",\n\t\"Senha\":\"123mudar\"\n}"
+								},
+								"url": {
+									"raw": "{{url}}/{{version}}/citezen",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{version}}",
+										"citezen"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Insert Citezen Fail - Forbidden",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "72d75e80-d2c4-4ad8-8737-88f2d5918571",
+										"type": "text/javascript",
+										"exec": [
+											"pm.test(\"GIVEN an existing Citezen,\", function() {",
+											"    pm.expect(pm.request).to.not.be.null;",
+											"});",
+											"",
+											"pm.test(\"THEN I should have a Forbidden response,\", function() {",
+											"    pm.response.to.have.status(403);",
 											"",
 											"    var response = pm.response.json();",
 											"    var request = JSON.parse(pm.request.body);",
-											"    pm.expect(response.errors[0].message).to.equal(\"Citezen not authenticated\")",
+											"    pm.expect(response.errors[0].message).to.equal(\"Citezen already exists\")",
 											"});"
 										]
 									}
@@ -1704,43 +2073,10 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "1cc3c59c-2239-484d-87b3-84eee65c8562",
+										"id": "3fbbdbd5-88a4-4256-be85-ae713bdaa915",
 										"type": "text/javascript",
 										"exec": [
-											"function GenerateNumber(min, max){",
-											"    return Math.floor(Math.random() * max) + min;",
-											"}",
-											"",
-											"function PadLeft(len, c){",
-											"    c = String(c)",
-											"    while(c.length< len) c= \"0\" + c;",
-											"    return c;",
-											"}",
-											"",
-											"var dateNow = new Date();",
-											"pm.environment.set(\"year\", dateNow.getFullYear() + 1);",
-											"pm.environment.set(\"month\", PadLeft(2, GenerateNumber(1, 12)));",
-											"pm.environment.set(\"day\", PadLeft(2, GenerateNumber(1, 27)));",
-											"pm.environment.set(\"hour\", PadLeft(2, GenerateNumber(0, 23)));",
-											"",
-											"var _url = pm.environment.get(\"url\") + '/' + pm.environment.get(\"version\") + '/local/' + pm.environment.get(\"enderecoKey\");",
-											"",
-											"const requestScheduling = {",
-											"    url: _url,",
-											"    method: 'GET',",
-											"    header: ['Content-Type:application/json',",
-											"        'Accept:application/json',",
-											"        'Token: 50ccb0d5-2556-47b9-b563-3095dedbf4f5'",
-											"    ]",
-											"};",
-											"",
-											"pm.sendRequest(requestScheduling, function(err, response) {",
-											"    const addressResponse = response.json();",
-											"    console.log(response);",
-											"    console.log(addressResponse);",
-											"    pm.environment.set(\"address_response\", addressResponse);",
-											"});",
-											""
+											"pm.environment.set(\"numero\", Math.floor(Math.random() * 99999) + 1)"
 										]
 									}
 								}
@@ -1751,88 +2087,49 @@
 									{
 										"key": "Content-Type",
 										"value": "application/json"
-									},
-									{
-										"key": "Token",
-										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f7"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"Data\":\"{{day}}/{{month}}/{{year}}\",\n\t\"Hora\":\"{{hour}}:00\",\n\t\"Tipo\":\"A\",\n\t\"Status\":\"A\",\n\t\"EnderecoKey\":\"{{enderecoKey}}\"\n}"
+									"raw": "{\n\t\"Nome\":\"Yuri\",\n\t\"Email\":\"yuri@sj90.com.br\",\n\t\"Cpf\":\"12345678992\",\n\t\"Senha\":\"123mudar\"\n}"
 								},
 								"url": {
-									"raw": "{{url}}/{{version}}/agendamento",
+									"raw": "{{url}}/{{version}}/citezen",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"agendamento"
+										"citezen"
 									]
 								}
 							},
 							"response": []
 						},
 						{
-							"name": "Get Scheduling Success",
+							"name": "Get Citizen Success",
 							"event": [
 								{
 									"listen": "test",
 									"script": {
-										"id": "66821b77-6d08-4a07-b74f-4b0f8eee6cf6",
+										"id": "09c7b544-e5bc-4259-b0fb-e3d2d8f2e216",
 										"type": "text/javascript",
 										"exec": [
-											"pm.test(\"GIVEN an Scheduling valid,\", function() {",
+											"pm.test(\"GIVEN a CitizenKey valid,\", function() {",
 											"    pm.expect(pm.request).to.not.be.null;",
 											"});",
 											"",
-											"pm.test(\"THEN I should have an Scheduling\", function() {",
+											"pm.test(\"THEN I should have a Citizen\", function() {",
 											"    pm.response.to.have.status(200);",
 											"",
 											"    var response = pm.response.json();",
 											"    pm.expect(response.errors).to.be.null",
-											"    pm.expect(response.result.agendamentoKey).to.equal(\"200994c1-fac2-4ca3-8750-9580b2bd475b\")",
-											"    pm.expect(response.result.data).to.equal(\"04/05/2018\")",
-											"    pm.expect(response.result.hora).to.equal(\"14:00\")",
-											"    pm.expect(response.result.tipo).to.equal(\"A\")",
-											"    pm.expect(response.result.status).to.equal(\"A\")",
-											"    ",
-											"    var responseAddress = pm.environment.get(\"address_response\")",
-											"    pm.expect(responseAddress.errors).to.be.null",
-											"    pm.expect(responseAddress.result.enderecoKey).to.equal(response.result.endereco.enderecoKey)",
-											"    pm.expect(responseAddress.result.cep).to.equal(response.result.endereco.cep)",
-											"    pm.expect(responseAddress.result.estado).to.equal(response.result.endereco.estado)",
-											"    pm.expect(responseAddress.result.cidade).to.equal(response.result.endereco.cidade)",
-											"    pm.expect(responseAddress.result.bairro).to.equal(response.result.endereco.bairro)",
-											"    pm.expect(responseAddress.result.rua).to.equal(response.result.endereco.rua)",
-											"    pm.expect(responseAddress.result.numero).to.equal(response.result.endereco.numero)",
+											"    pm.expect(response.result.citezenKey).to.equal(\"2eefac75-acab-4f41-96e3-0aa4f5b8ff86\")",
+											"    pm.expect(response.result.nome).to.equal(\"Yuri Pereira de Souza\")",
+											"    pm.expect(response.result.email).to.equal(\"yuripsouza@sj90.com.br\")",
+											"    pm.expect(response.result.cpf).to.equal(\"12345678992\")",
+											"    pm.expect(response.result.senha).to.equal(\"123mudar\")",
 											"});"
-										]
-									}
-								},
-								{
-									"listen": "prerequest",
-									"script": {
-										"id": "1c3efb89-b7be-4821-8e0f-b89fec4c5e08",
-										"type": "text/javascript",
-										"exec": [
-											"var _url = pm.environment.get(\"url\") + '/' + pm.environment.get(\"version\") + '/local/' + pm.environment.get(\"enderecoKey\");",
-											"",
-											"const requestScheduling = {",
-											"    url: _url,",
-											"    method: 'GET',",
-											"    header: ['Content-Type:application/json',",
-											"        'Accept:application/json',",
-											"        'Token: 50ccb0d5-2556-47b9-b563-3095dedbf4f5'",
-											"    ]",
-											"};",
-											"",
-											"pm.sendRequest(requestScheduling, function(err, response) {",
-											"    const addressResponse = response.json();",
-											"    pm.environment.set(\"address_response\", addressResponse);",
-											"});",
-											""
 										]
 									}
 								}
@@ -1851,37 +2148,37 @@
 								],
 								"body": {},
 								"url": {
-									"raw": "{{url}}/{{version}}/agendamento/200994c1-fac2-4ca3-8750-9580b2bd475b",
+									"raw": "{{url}}/{{version}}/citezen/2eefac75-acab-4f41-96e3-0aa4f5b8ff86",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"agendamento",
-										"200994c1-fac2-4ca3-8750-9580b2bd475b"
+										"citezen",
+										"2eefac75-acab-4f41-96e3-0aa4f5b8ff86"
 									]
 								}
 							},
 							"response": []
 						},
 						{
-							"name": "Get Scheduling  Fail - NotFound",
+							"name": "Get Citizen Fail - NotFound",
 							"event": [
 								{
 									"listen": "test",
 									"script": {
-										"id": "8fa50691-fecd-43b6-b974-cdef470f4442",
+										"id": "5601ed32-f9b8-4ffd-9649-46059f0aa373",
 										"type": "text/javascript",
 										"exec": [
-											"pm.test(\"GIVEN an SchedulingKey invalid,\", function() {",
+											"pm.test(\"GIVEN a CitezenKey invalid,\", function() {",
 											"    pm.expect(pm.request).to.not.be.null;",
 											"});",
 											"",
-											"pm.test(\"THEN I should have an Scheduling Not Found\", function() {",
+											"pm.test(\"THEN I should have a Citizen Not Found\", function() {",
 											"    pm.response.to.have.status(404);",
 											"",
 											"    var response = pm.response.json();",
-											"    pm.expect(response.errors[0].message).to.equal(\"Scheduling not found\")",
+											"    pm.expect(response.errors[0].message).to.equal(\"Citizen not found\")",
 											"});"
 										]
 									}
@@ -1901,313 +2198,14 @@
 								],
 								"body": {},
 								"url": {
-									"raw": "{{url}}/{{version}}/agendamento/200994c1-fac2-4ca3-8750-9580b2bd4757",
+									"raw": "{{url}}/{{version}}/citezen/2eefac75-acab-4f41-96e3-0aa4f5b8ff87",
 									"host": [
 										"{{url}}"
 									],
 									"path": [
 										"{{version}}",
-										"agendamento",
-										"200994c1-fac2-4ca3-8750-9580b2bd4757"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get Scheduling  Fail - NotAuthenticate",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "f94b8fc7-62a9-4c81-88c1-1ecd565da0e3",
-										"type": "text/javascript",
-										"exec": [
-											"pm.test(\"GIVEN an SchedulingKey valid with citezen not authenticate,\", function() {",
-											"    pm.expect(pm.request).to.not.be.null;",
-											"});",
-											"",
-											"pm.test(\"THEN I should have an Unauthorized response\", function() {",
-											"    pm.response.to.have.status(401);",
-											"",
-											"    var response = pm.response.json();",
-											"    pm.expect(response.errors[0].message).to.equal(\"Citezen not authenticated\")",
-											"});"
-										]
-									}
-								}
-							],
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									},
-									{
-										"key": "Token",
-										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f4"
-									}
-								],
-								"body": {},
-								"url": {
-									"raw": "{{url}}/{{version}}/agendamento/200994c1-fac2-4ca3-8750-9580b2bd475b",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"{{version}}",
-										"agendamento",
-										"200994c1-fac2-4ca3-8750-9580b2bd475b"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "GetAll Schedules Success",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "db419009-9437-44d8-a7ee-7e010dc69c93",
-										"type": "text/javascript",
-										"exec": [
-											"pm.test(\"GIVEN a SchedulingKey valid and authenticated,\", function() {",
-											"    pm.expect(pm.request).to.not.be.null;",
-											"});",
-											"",
-											"pm.test(\"THEN I should have a Scheduling Collection\", function() {",
-											"    pm.response.to.have.status(200);",
-											"",
-											"    var response = pm.response.json();",
-											"    pm.expect(response.errors).to.be.null",
-											"    pm.expect(response.result.length).to.be.above(1)",
-											"});"
-										]
-									}
-								}
-							],
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Token",
-										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f5"
-									},
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {},
-								"url": {
-									"raw": "{{url}}/{{version}}/agendamento/",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"{{version}}",
-										"agendamento",
-										""
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "GetAll Schedules Fail - NotAuthenticate",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "010e72e7-9b06-49bf-8444-4cf1db1e130a",
-										"type": "text/javascript",
-										"exec": [
-											"pm.test(\"GIVEN an CitezenKey not authenticate,\", function() {",
-											"    pm.expect(pm.request).to.not.be.null;",
-											"});",
-											"",
-											"pm.test(\"THEN I should have an Unauthorized response\", function() {",
-											"    pm.response.to.have.status(401);",
-											"",
-											"    var response = pm.response.json();",
-											"    pm.expect(response.errors[0].message).to.equal(\"Citezen not authenticated\")",
-											"});"
-										]
-									}
-								}
-							],
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Token",
-										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f8"
-									},
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {},
-								"url": {
-									"raw": "{{url}}/{{version}}/agendamento/",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"{{version}}",
-										"agendamento",
-										""
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Insert Scheduling Fail - Address Not Found",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "eebefe09-79fd-4a0f-bb95-4094d99f5d5f",
-										"type": "text/javascript",
-										"exec": [
-											"pm.test(\"GIVEN a Scheduling valid but an Address invalid,\", function() {",
-											"    pm.expect(pm.request).to.not.be.null;",
-											"});",
-											"",
-											"pm.test(\"THEN I should have a NotFound response\", function() {",
-											"    pm.response.to.have.status(404);",
-											"",
-											"    var response = pm.response.json();",
-											"    pm.expect(response.errors[0].message).to.equal(\"Not was possible insert the Scheduling: Address not found\");",
-											"});"
-										]
-									}
-								},
-								{
-									"listen": "prerequest",
-									"script": {
-										"id": "b25aae16-8652-4cfe-9b06-ecdf95ba5226",
-										"type": "text/javascript",
-										"exec": [
-											"function GenerateNumber(min, max){",
-											"    return Math.floor(Math.random() * max) + min;",
-											"}",
-											"",
-											"function PadLeft(len, c){",
-											"    c = String(c)",
-											"    while(c.length< len) c= \"0\" + c;",
-											"    return c;",
-											"}",
-											"",
-											"var dateNow = new Date();",
-											"pm.environment.set(\"year\", dateNow.getFullYear() + 1);",
-											"pm.environment.set(\"month\", PadLeft(2, GenerateNumber(1, 12)));",
-											"pm.environment.set(\"day\", PadLeft(2, GenerateNumber(1, 27)));",
-											"pm.environment.set(\"hour\", PadLeft(2, GenerateNumber(0, 23)));"
-										]
-									}
-								}
-							],
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									},
-									{
-										"key": "Token",
-										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f5"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n\t\"Data\":\"{{day}}/{{month}}/{{year}}\",\n\t\"Hora\":\"{{hour}}:00\",\n\t\"Tipo\":\"A\",\n\t\"Status\":\"A\",\n\t\"EnderecoKey\":\"fe725a29-56a9-4daa-805b-91bb9c247758\"\n}"
-								},
-								"url": {
-									"raw": "{{url}}/{{version}}/agendamento",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"{{version}}",
-										"agendamento"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Insert Scheduling Fail - BadRequest Date Invalid",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "a8f67580-553c-42bb-9aaa-ea644b1b7ab1",
-										"type": "text/javascript",
-										"exec": [
-											"pm.test(\"GIVEN an Scheduling with Date invalid,\", function() {",
-											"    pm.expect(pm.request).to.not.be.null;",
-											"});",
-											"",
-											"pm.test(\"THEN I should have a BadRequest response,\", function() {",
-											"    pm.response.to.have.status(400);",
-											"",
-											"    var response = pm.response.json();",
-											"    pm.expect(response.errors[0].message).to.equal(\"A Data deve ser superior a atual\");",
-											"});"
-										]
-									}
-								},
-								{
-									"listen": "prerequest",
-									"script": {
-										"id": "fe624b0c-8956-47da-b623-3881b7818997",
-										"type": "text/javascript",
-										"exec": [
-											"function PadLeft(len, c){",
-											"    c = String(c)",
-											"    while(c.length< len) c= \"0\" + c;",
-											"    return c;",
-											"}",
-											"",
-											"var dateNow = new Date();",
-											"pm.environment.set(\"year\", dateNow.getFullYear());",
-											"pm.environment.set(\"month\", PadLeft(2, dateNow.getMonth() - 1));",
-											"pm.environment.set(\"day\", PadLeft(2, dateNow.getDate()));",
-											"pm.environment.set(\"hour\", PadLeft(2, dateNow.getHours()));"
-										]
-									}
-								}
-							],
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									},
-									{
-										"key": "Token",
-										"value": "50ccb0d5-2556-47b9-b563-3095dedbf4f5"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n\t\"Data\":\"{{day}}/{{month}}/{{year}}\",\n\t\"Hora\":\"{{hour}}:00\",\n\t\"Tipo\":\"A\",\n\t\"Status\":\"A\",\n\t\"EnderecoKey\":\"fe725a29-56a9-4daa-805b-91bb9c247758\"\n}"
-								},
-								"url": {
-									"raw": "{{url}}/{{version}}/agendamento",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"{{version}}",
-										"agendamento"
+										"citezen",
+										"2eefac75-acab-4f41-96e3-0aa4f5b8ff87"
 									]
 								}
 							},
@@ -2218,7 +2216,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "c5c9419a-d33b-44e5-9bab-09c6eb64a723",
+								"id": "92be5e61-ae35-4800-92dd-b80643fa23b3",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -2228,7 +2226,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a5e63f40-8adb-4b41-a198-bbbc087143c1",
+								"id": "82b6d6b7-dc73-4001-a242-d86e9e3b0ebb",
 								"type": "text/javascript",
 								"exec": [
 									""
