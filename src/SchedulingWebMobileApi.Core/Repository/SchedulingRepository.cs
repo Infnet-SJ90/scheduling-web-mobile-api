@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using Dapper;
+using System.Globalization;
 
 namespace SchedulingWebMobileApi.Core.Repository
 {
@@ -66,8 +67,8 @@ namespace SchedulingWebMobileApi.Core.Repository
                     return new Scheduling()
                     {
                         SchedulingKey = scheduling.SchedulingKey,
-                        Data = DateTime.Parse(scheduling.Data),
-                        Hora = DateTime.Parse(scheduling.Hora),
+                        Data = DateTime.ParseExact(scheduling.Data, "dd/MM/yyyy HH:mm:ss", CultureInfo.InvariantCulture),
+                        Hora = DateTime.ParseExact(scheduling.Hora, "dd/MM/yyyy HH:mm:ss", CultureInfo.InvariantCulture),
                         Tipo = scheduling.Tipo,
                         Status = scheduling.Status,
                         Address = new Address()
@@ -117,8 +118,8 @@ namespace SchedulingWebMobileApi.Core.Repository
                     response.Add(new Scheduling()
                     {
                         SchedulingKey = scheduling.SchedulingKey,
-                        Data = DateTime.Parse(scheduling.Data),
-                        Hora = DateTime.Parse(scheduling.Hora),
+                        Data = DateTime.ParseExact(scheduling.Data, "dd/MM/yyyy HH:mm:ss", CultureInfo.InvariantCulture),
+                        Hora = DateTime.ParseExact(scheduling.Hora, "dd/MM/yyyy HH:mm:ss", CultureInfo.InvariantCulture),
                         Tipo = scheduling.Tipo,
                         Status = scheduling.Status,
                         Address = new Address()
