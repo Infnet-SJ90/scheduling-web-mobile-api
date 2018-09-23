@@ -74,7 +74,7 @@ namespace SchedulingWebMobileApi.Core.Services
 
                 throw new ForbbidenException("Scheduling already exists");
             }
-            catch(ForbbidenException ex)
+            catch (ForbbidenException ex)
             {
                 throw new ForbbidenException($"Not was possible insert the Scheduling: {ex.Message}");
             }
@@ -97,11 +97,8 @@ namespace SchedulingWebMobileApi.Core.Services
                 if ((scheduling.Data != entity.Data || scheduling.Hora != entity.Hora) && _schedulingRepository.Exists(entity))
                     throw new ForbbidenException("Scheduling already exists");
 
-                if (scheduling.Address.AddressKey != entity.Address.AddressKey)
-                {
-                    var address = _addressRepository.Get(entity.Address.AddressKey);
-                    entity.Address = address ?? throw new NotFoundException("New Address not found");
-                }
+                var address = _addressRepository.Get(entity.Address.AddressKey);
+                entity.Address = address ?? throw new NotFoundException("New Address not found");
 
                 return _schedulingRepository.Update(entity);
             }
