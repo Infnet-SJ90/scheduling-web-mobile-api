@@ -170,7 +170,7 @@ namespace SchedulingWebMobileApi.Core.Repository
             try
             {
                 _connection.Open();
-                _connection.Execute("UPDATE Scheduling SET Data = @Data, Hora = @Hora, Tipo = @Tipo, Status = @Status, AddressKey = @AddressKey where SchedulingKey = @SchedulingKey", entity);
+                _connection.Execute("UPDATE Scheduling SET Data = @Data, Hora = @Hora, Tipo = @Tipo, Status = @Status, addresskey = @AddressKey where SchedulingKey = @SchedulingKey", new { SchedulingKey = entity.SchedulingKey, Data = entity.Data.Date, Hora = entity.Hora.TimeOfDay, Tipo = entity.Tipo, Status = entity.Status, AddressKey = entity.Address.AddressKey });
                 return entity;
             }
             catch (Exception ex)
